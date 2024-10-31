@@ -1,0 +1,6 @@
+setup.py
+cat_messages/__init__.py
+cat_messages.egg-info/PKG-INFO
+cat_messages.egg-info/SOURCES.txt
+cat_messages.egg-info/dependency_links.txt
+cat_messages.egg-info/top_level.txt

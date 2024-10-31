@@ -1,0 +1,1 @@
+/home/hamilton/souzou/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp

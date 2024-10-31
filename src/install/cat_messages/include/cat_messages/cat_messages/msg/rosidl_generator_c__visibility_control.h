@@ -1,0 +1,1 @@
+/home/hamilton/souzou/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/rosidl_generator_c__visibility_control.h

@@ -1,0 +1,1 @@
+/home/hamilton/souzou/src/build/cat_messages/rosidl_generator_py/cat_messages/msg/__init__.py

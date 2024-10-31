@@ -1,0 +1,3 @@
+[console_scripts]
+pc_controller = cat.pc_controller:main
+
