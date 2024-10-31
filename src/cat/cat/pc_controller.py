@@ -26,10 +26,15 @@ class PcController(Node):
             self.vel_x+=0.1
         elif key=="a":
             self.vel_x-=0.1
-        print(f"vel_x{self.vel_x},vel_y{self.vel_y}")
+        elif key=="l":
+            self.vel_yaw-=0.1
+        elif key=="k":
+            self.vel_yaw+=0.1
+        print(f"vel_x{self.vel_x},vel_y{self.vel_y},vel_yaw{self.vel_yaw}")
         msg= JoyCat()
         msg.x = self.vel_x
         msg.y = self.vel_y
+        msg.yaw=self.vel_yaw
         self.pub.publish(msg)
         
 def main(args=None):
