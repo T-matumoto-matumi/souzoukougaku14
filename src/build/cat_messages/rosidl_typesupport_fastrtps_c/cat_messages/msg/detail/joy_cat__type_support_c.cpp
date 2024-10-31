@@ -54,11 +54,6 @@ static bool _JoyCat__cdr_serialize(
     cdr << ros_message->x;
   }
 
-  // Field name: y
-  {
-    cdr << ros_message->y;
-  }
-
   // Field name: yaw
   {
     cdr << ros_message->yaw;
@@ -89,11 +84,6 @@ static bool _JoyCat__cdr_deserialize(
   // Field name: x
   {
     cdr >> ros_message->x;
-  }
-
-  // Field name: y
-  {
-    cdr >> ros_message->y;
   }
 
   // Field name: yaw
@@ -135,12 +125,6 @@ size_t get_serialized_size_cat_messages__msg__JoyCat(
   // field.name x
   {
     size_t item_size = sizeof(ros_message->x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name y
-  {
-    size_t item_size = sizeof(ros_message->y);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -192,14 +176,6 @@ size_t max_serialized_size_cat_messages__msg__JoyCat(
   is_plain = true;
 
   // member: x
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: y
   {
     size_t array_size = 1;
 

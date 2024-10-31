@@ -69,32 +69,16 @@ private:
   ::cat_messages::msg::JoyCat msg_;
 };
 
-class Init_JoyCat_y
-{
-public:
-  explicit Init_JoyCat_y(::cat_messages::msg::JoyCat & msg)
-  : msg_(msg)
-  {}
-  Init_JoyCat_yaw y(::cat_messages::msg::JoyCat::_y_type arg)
-  {
-    msg_.y = std::move(arg);
-    return Init_JoyCat_yaw(msg_);
-  }
-
-private:
-  ::cat_messages::msg::JoyCat msg_;
-};
-
 class Init_JoyCat_x
 {
 public:
   Init_JoyCat_x()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_JoyCat_y x(::cat_messages::msg::JoyCat::_x_type arg)
+  Init_JoyCat_yaw x(::cat_messages::msg::JoyCat::_x_type arg)
   {
     msg_.x = std::move(arg);
-    return Init_JoyCat_y(msg_);
+    return Init_JoyCat_yaw(msg_);
   }
 
 private:

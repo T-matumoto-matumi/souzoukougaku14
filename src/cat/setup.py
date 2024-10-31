@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'pc_controller = cat.pc_controller:main'
+            'pc_controller = cat.pc_controller:main',
+            'state_machine = cat.state_machine:main',
         ],
     },
 )

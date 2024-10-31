@@ -21,7 +21,6 @@ extern "C"
 typedef struct cat_messages__msg__JoyCat
 {
   double x;
-  double y;
   double yaw;
   bool buttun_1;
   bool buttun_2;

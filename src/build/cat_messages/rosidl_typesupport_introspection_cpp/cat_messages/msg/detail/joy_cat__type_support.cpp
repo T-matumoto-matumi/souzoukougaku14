@@ -37,7 +37,7 @@ void JoyCat_fini_function(void * message_memory)
   typed_message->~JoyCat();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember JoyCat_message_member_array[5] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember JoyCat_message_member_array[4] = {
   {
     "x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
@@ -47,23 +47,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember JoyCat_messag
     0,  // array size
     false,  // is upper bound
     offsetof(cat_messages::msg::JoyCat, x),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "y",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(cat_messages::msg::JoyCat, y),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -128,7 +111,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember JoyCat_messag
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers JoyCat_message_members = {
   "cat_messages::msg",  // message namespace
   "JoyCat",  // message name
-  5,  // number of fields
+  4,  // number of fields
   sizeof(cat_messages::msg::JoyCat),
   JoyCat_message_member_array,  // message members
   JoyCat_init_function,  // function to initialize message memory (memory has to be allocated)

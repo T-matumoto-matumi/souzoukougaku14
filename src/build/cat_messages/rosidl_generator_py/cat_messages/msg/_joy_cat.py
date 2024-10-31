@@ -58,7 +58,6 @@ class JoyCat(metaclass=Metaclass_JoyCat):
 
     __slots__ = [
         '_x',
-        '_y',
         '_yaw',
         '_buttun_1',
         '_buttun_2',
@@ -66,14 +65,12 @@ class JoyCat(metaclass=Metaclass_JoyCat):
 
     _fields_and_field_types = {
         'x': 'double',
-        'y': 'double',
         'yaw': 'double',
         'buttun_1': 'boolean',
         'buttun_2': 'boolean',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
@@ -85,7 +82,6 @@ class JoyCat(metaclass=Metaclass_JoyCat):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.x = kwargs.get('x', float())
-        self.y = kwargs.get('y', float())
         self.yaw = kwargs.get('yaw', float())
         self.buttun_1 = kwargs.get('buttun_1', bool())
         self.buttun_2 = kwargs.get('buttun_2', bool())
@@ -121,8 +117,6 @@ class JoyCat(metaclass=Metaclass_JoyCat):
             return False
         if self.x != other.x:
             return False
-        if self.y != other.y:
-            return False
         if self.yaw != other.yaw:
             return False
         if self.buttun_1 != other.buttun_1:
@@ -150,21 +144,6 @@ class JoyCat(metaclass=Metaclass_JoyCat):
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
                 "The 'x' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._x = value
-
-    @builtins.property
-    def y(self):
-        """Message field 'y'."""
-        return self._y
-
-    @y.setter
-    def y(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'y' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'y' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._y = value
 
     @builtins.property
     def yaw(self):

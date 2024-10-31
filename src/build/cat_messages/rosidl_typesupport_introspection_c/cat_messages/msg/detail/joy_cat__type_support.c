@@ -31,7 +31,7 @@ void cat_messages__msg__JoyCat__rosidl_typesupport_introspection_c__JoyCat_fini_
   cat_messages__msg__JoyCat__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember cat_messages__msg__JoyCat__rosidl_typesupport_introspection_c__JoyCat_message_member_array[5] = {
+static rosidl_typesupport_introspection_c__MessageMember cat_messages__msg__JoyCat__rosidl_typesupport_introspection_c__JoyCat_message_member_array[4] = {
   {
     "x",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
@@ -41,23 +41,6 @@ static rosidl_typesupport_introspection_c__MessageMember cat_messages__msg__JoyC
     0,  // array size
     false,  // is upper bound
     offsetof(cat_messages__msg__JoyCat, x),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(cat_messages__msg__JoyCat, y),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -122,7 +105,7 @@ static rosidl_typesupport_introspection_c__MessageMember cat_messages__msg__JoyC
 static const rosidl_typesupport_introspection_c__MessageMembers cat_messages__msg__JoyCat__rosidl_typesupport_introspection_c__JoyCat_message_members = {
   "cat_messages__msg",  // message namespace
   "JoyCat",  // message name
-  5,  // number of fields
+  4,  // number of fields
   sizeof(cat_messages__msg__JoyCat),
   cat_messages__msg__JoyCat__rosidl_typesupport_introspection_c__JoyCat_message_member_array,  // message members
   cat_messages__msg__JoyCat__rosidl_typesupport_introspection_c__JoyCat_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -4,3 +4,5 @@ cat_messages.egg-info/PKG-INFO
 cat_messages.egg-info/SOURCES.txt
 cat_messages.egg-info/dependency_links.txt
 cat_messages.egg-info/top_level.txt
+cat_messages/msg/__init__.py
+cat_messages/msg/_joy_cat.py

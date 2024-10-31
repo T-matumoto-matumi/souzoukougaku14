@@ -39,7 +39,6 @@ struct JoyCat_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->x = 0.0;
-      this->y = 0.0;
       this->yaw = 0.0;
       this->buttun_1 = false;
       this->buttun_2 = false;
@@ -53,7 +52,6 @@ struct JoyCat_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->x = 0.0;
-      this->y = 0.0;
       this->yaw = 0.0;
       this->buttun_1 = false;
       this->buttun_2 = false;
@@ -64,9 +62,6 @@ struct JoyCat_
   using _x_type =
     double;
   _x_type x;
-  using _y_type =
-    double;
-  _y_type y;
   using _yaw_type =
     double;
   _yaw_type yaw;
@@ -82,12 +77,6 @@ struct JoyCat_
     const double & _arg)
   {
     this->x = _arg;
-    return *this;
-  }
-  Type & set__y(
-    const double & _arg)
-  {
-    this->y = _arg;
     return *this;
   }
   Type & set__yaw(
@@ -152,9 +141,6 @@ struct JoyCat_
   bool operator==(const JoyCat_ & other) const
   {
     if (this->x != other.x) {
-      return false;
-    }
-    if (this->y != other.y) {
       return false;
     }
     if (this->yaw != other.yaw) {

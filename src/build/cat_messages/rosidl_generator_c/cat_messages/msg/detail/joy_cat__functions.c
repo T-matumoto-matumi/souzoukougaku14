@@ -18,7 +18,6 @@ cat_messages__msg__JoyCat__init(cat_messages__msg__JoyCat * msg)
     return false;
   }
   // x
-  // y
   // yaw
   // buttun_1
   // buttun_2
@@ -32,7 +31,6 @@ cat_messages__msg__JoyCat__fini(cat_messages__msg__JoyCat * msg)
     return;
   }
   // x
-  // y
   // yaw
   // buttun_1
   // buttun_2
@@ -46,10 +44,6 @@ cat_messages__msg__JoyCat__are_equal(const cat_messages__msg__JoyCat * lhs, cons
   }
   // x
   if (lhs->x != rhs->x) {
-    return false;
-  }
-  // y
-  if (lhs->y != rhs->y) {
     return false;
   }
   // yaw
@@ -77,8 +71,6 @@ cat_messages__msg__JoyCat__copy(
   }
   // x
   output->x = input->x;
-  // y
-  output->y = input->y;
   // yaw
   output->yaw = input->yaw;
   // buttun_1

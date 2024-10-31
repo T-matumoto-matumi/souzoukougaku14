@@ -11,25 +11,25 @@ class PcController(Node):
         timer_period =0.01
         self.timer = self.create_timer(timer_period,self.timer_callback)
         self.vel_x =0.0
-        self.vel_y =0.0
         self.vel_yaw =0.0
 
     
     def timer_callback(self):
-        key = input("f:forward\na:left\nd:right\ns:back <<")
+        key = input("w:forward\na:left\nd:right\ns:back <<")
         print(f"key={key}")
         if key=="w":
-            self.vel_y+=0.1
-        elif key=="s":
-            self.vel_y-=0.1
-        elif key=="d":
             self.vel_x+=0.1
-        elif key=="a":
+        elif key=="s":
             self.vel_x-=0.1
-        print(f"vel_x{self.vel_x},vel_y{self.vel_y}")
+        elif key=="d":
+            self.vel_yaw-=0.1
+        elif key=="a":
+            self.vel_yaw+=0.1
+            
+        print(f"vel_x{self.vel_x},vel_yaw{self.vel_yaw}")
         msg= JoyCat()
         msg.x = self.vel_x
-        msg.y = self.vel_y
+        msg.yaw=self.vel_yaw
         self.pub.publish(msg)
         
 def main(args=None):
