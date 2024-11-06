@@ -1,4 +1,5 @@
 import socket
+import time
 
 # ArduinoのIPアドレスとポート番号
 SSID = "cafe_00"

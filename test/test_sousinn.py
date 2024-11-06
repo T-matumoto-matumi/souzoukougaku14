@@ -1,30 +1,26 @@
 import socket
-import time
+import struct
 
-# ESP32のアクセスポイント設定
-SSID = "cafe_00"
-PASSWORD = "123456789"
+# ESP32サーバーのIPアドレスとポート
 ESP32_IP = "192.168.4.1"  # ESP32のIPアドレス
-PORT = 80
+ESP32_PORT = 8080         # ESP32のポート番号
 
-# 送信したい配列データ
-data_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-data_string = ','.join(map(str, data_array)) + '\n'  # カンマで区切って文字列化し、最後に改行を追加
+# 送信するfloat配列とスタートバイト
+data_array = [1.1, 2.2, 3.3, 4.4, 5.5]
+start_byte = 0xAA
 
-# ソケット接続の準備
-try:
-    # ソケットを作成
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-        sock.connect((ESP32_IP, PORT))  # ESP32サーバに接続
-        print("Connected to ESP32")
+# ソケットを作成してESP32に接続
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket.connect((ESP32_IP, ESP32_PORT))
+print("Connected to ESP32 server")
 
-        # 配列データを送信
-        sock.sendall(data_string.encode())
-        print(f"Sent data: {data_string.strip()}")
+# スタートバイトを送信
+client_socket.sendall(struct.pack('B', start_byte))
 
-        # 応答を待機
-        response = sock.recv(1024).decode()
-        print("Received from ESP32:", response)
+# float配列をバイナリ形式で送信
+data = struct.pack(f'{len(data_array)}f', *data_array)
+client_socket.sendall(data)
 
-except Exception as e:
-    print("An error occurred:", e)
+# ソケットを閉じる
+client_socket.close()
+print("Data sent and connection closed")

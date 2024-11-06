@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'pc_controller = cat.pc_controller:main',
             'state_machine = cat.state_machine:main',
+            'udp_node = cat.udp_node:main',
         ],
     },
 )

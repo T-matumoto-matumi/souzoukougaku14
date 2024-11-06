@@ -27,7 +27,7 @@ class StateMachine(Node):
         self.joy_msg = JoyCat()
         self.vel_msg = Twist()
         self.vel_pub = self.create_publisher(
-            Twist,"/turtle1/cmd_vel",10
+            Twist,"/cmd_vel",10
         )
         
     def joy_callback(self,msg):
@@ -38,7 +38,6 @@ class StateMachine(Node):
             self.vel_msg.linear.x=self.joy_msg.x
             self.vel_msg.angular.z=self.joy_msg.yaw
             self.vel_pub.publish(self.vel_msg)
-            print("pub!")
             
         elif self.robot_state == MachineState.auto_mode:
             #`kokoni auto mode kaku
