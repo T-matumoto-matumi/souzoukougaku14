@@ -1,5 +1,6 @@
 #include "WiFiS3.h"
 #include "math.h"
+#include "FspTimer.h"
 
 const char* SSID = "cafe_14";      // Wi-FiのSSID
 const char* PASS = "123456789";    // Wi-Fiのパスワード
@@ -16,6 +17,27 @@ const int PHASE_B_left=8;
 // int配列の要素数
 const int arraySize = 5;
 int dataArray[arraySize];
+
+FspTimer _timer;
+
+void timer_callback(timer_callback_args_t *arg){
+  Serial.println("timer_callback");
+}
+
+bool timer_setup(){
+  //setup ok:1 ,setup errer:0
+  uint8_t type;
+  int8_t ch = FspTimer::get_available_timer(type);
+  if(ch<0){
+    return 0;
+  }else{
+    _timer.begin(TIMER_MODE_PERIODIC,type,ch,1.0f,50.0f,timer_callback,nullptr);
+    _timer.setup_overflow_irq();
+    _timer.open();
+    _timer.start();
+    return 1;
+  }
+}
 class MOTOR {
   private:
     int AIN1;
@@ -62,6 +84,11 @@ void setup() {
   Serial.println("Access Point Started");
   // サーバーの開始
   server.begin();
+  if(timer_setup()==0){
+    Serial.println(":::errer:::no timer to use");
+  }else{
+    Serial.println(":info:timer_callback start");
+  }
 }
 
 void loop() {
