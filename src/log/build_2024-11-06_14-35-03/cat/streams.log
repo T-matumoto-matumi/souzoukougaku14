@@ -1,0 +1,33 @@
+[0.373s] Invoking command in '/home/hamilton/souzou/src/cat': AMENT_PREFIX_PATH=/home/hamilton/souzou/src/install/cat_messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hamilton/souzou/src/install/cat_messages CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/hamilton/souzou/src/install/cat_messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hamilton/souzou/src/build/cat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages:/home/hamilton/souzou/src/install/cat_messages/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/cat build --build-base /home/hamilton/souzou/src/build/cat/build install --record /home/hamilton/souzou/src/build/cat/install.log --single-version-externally-managed install_data
+[0.520s] running egg_info
+[0.521s] writing ../build/cat/cat.egg-info/PKG-INFO
+[0.521s] writing dependency_links to ../build/cat/cat.egg-info/dependency_links.txt
+[0.521s] writing entry points to ../build/cat/cat.egg-info/entry_points.txt
+[0.521s] writing requirements to ../build/cat/cat.egg-info/requires.txt
+[0.523s] writing top-level names to ../build/cat/cat.egg-info/top_level.txt
+[0.525s] reading manifest file '../build/cat/cat.egg-info/SOURCES.txt'
+[0.525s] writing manifest file '../build/cat/cat.egg-info/SOURCES.txt'
+[0.526s] running build
+[0.526s] running build_py
+[0.526s] copying cat/state_machine.py -> /home/hamilton/souzou/src/build/cat/build/lib/cat
+[0.526s] copying cat/serial_sample.py -> /home/hamilton/souzou/src/build/cat/build/lib/cat
+[0.526s] copying cat/pc_controller.py -> /home/hamilton/souzou/src/build/cat/build/lib/cat
+[0.526s] running install
+[0.527s] running install_lib
+[0.528s] copying /home/hamilton/souzou/src/build/cat/build/lib/cat/state_machine.py -> /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat
+[0.528s] copying /home/hamilton/souzou/src/build/cat/build/lib/cat/serial_sample.py -> /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat
+[0.528s] copying /home/hamilton/souzou/src/build/cat/build/lib/cat/pc_controller.py -> /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat
+[0.528s] byte-compiling /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat/state_machine.py to state_machine.cpython-310.pyc
+[0.529s] byte-compiling /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat/serial_sample.py to serial_sample.cpython-310.pyc
+[0.529s] byte-compiling /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat/pc_controller.py to pc_controller.cpython-310.pyc
+[0.529s] running install_data
+[0.530s] copying package.xml -> /home/hamilton/souzou/src/install/cat/share/cat
+[0.530s] running install_egg_info
+[0.531s] removing '/home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat-0.0.0-py3.10.egg-info' (and everything under it)
+[0.531s] Copying ../build/cat/cat.egg-info to /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat-0.0.0-py3.10.egg-info
+[0.532s] running install_scripts
+[0.548s] Installing pc_controller script to /home/hamilton/souzou/src/install/cat/lib/cat
+[0.548s] Installing state_machine script to /home/hamilton/souzou/src/install/cat/lib/cat
+[0.548s] Installing udp_node script to /home/hamilton/souzou/src/install/cat/lib/cat
+[0.548s] writing list of installed files to '/home/hamilton/souzou/src/build/cat/install.log'
+[0.565s] Invoked command in '/home/hamilton/souzou/src/cat' returned '0': AMENT_PREFIX_PATH=/home/hamilton/souzou/src/install/cat_messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hamilton/souzou/src/install/cat_messages CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/hamilton/souzou/src/install/cat_messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hamilton/souzou/src/build/cat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages:/home/hamilton/souzou/src/install/cat_messages/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/cat build --build-base /home/hamilton/souzou/src/build/cat/build install --record /home/hamilton/souzou/src/build/cat/install.log --single-version-externally-managed install_data

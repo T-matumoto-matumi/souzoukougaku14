@@ -100,10 +100,11 @@ void wifi_setup(){
 void send_msg(){
   WiFiClient client = server.available();
   if(client){
-    size_t dataSize = sizeof(dataArray_send) / sizeof(dataArray_send[0]);
-    // int配列をバイナリで送信
     client.write(0xAA);
-    client.write((uint8_t*)&dataArray_send, dataSize * sizeof(int));
+   // int配列をバイナリで送信
+    for (int i = 0; i < sizeof(dataArray_send) / sizeof(dataArray_send[0]); i++) {
+      client.write((uint8_t*)&dataArray_send[i], sizeof(int));
+    }
     Serial.println(":info:   Send int data");
   }
   if (!client.connected()) {
