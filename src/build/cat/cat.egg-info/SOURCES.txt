@@ -12,7 +12,8 @@ cat/__init__.py
 cat/pc_controller.py
 cat/serial_sample.py
 cat/state_machine.py
-cat/udp_node.py
+cat/tcp_receive_node.py
+cat/tcp_send_node.py
 resource/cat
 test/test_copyright.py
 test/test_flake8.py

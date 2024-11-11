@@ -16,13 +16,20 @@ def generate_launch_description():
             executable='state_machine',
             name='state_machine',
             output="screen",
-            remappings=[("/cmd_vel","turtle1/cmd_vel")]
+            #remappings=[("/cmd_vel","turtle1/cmd_vel")]
             ),
         Node(
             package='cat',
             namespace='cat',
-            executable='udp_node',
-            name='udp_node',
+            executable='tcp_send_node',
+            name='tcp_send_node',
+            output="screen"
+            ),
+        Node(
+            package='cat',
+            namespace='cat',
+            executable='tcp_receive_node',
+            name='tcp_receive_node',
             output="screen"
             ),
         

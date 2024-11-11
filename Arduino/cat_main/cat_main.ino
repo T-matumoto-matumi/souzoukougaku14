@@ -10,19 +10,36 @@ int status = WL_IDLE_STATUS;
 WiFiServer server(PORT);
 
 //encoder
-volatile int count_right;
-volatile int count_left;
-const int PHASE_A_right=2;
-const int PHASE_B_right=4;
-const int PHASE_A_left=7;
-const int PHASE_B_left=8;
-// int配列の要素数
+const int ref = 32;
+volatile int count_right=0;
+volatile int count_left=0;
+const int PHASE_A_right=1;
+const int PHASE_B_right=0;
+const int PHASE_A_left=8;
+const int PHASE_B_left=7;
+
+// 通信用のint配列
 const int arraySize = 5;
 int dataArray[arraySize];
 int dataArray_send[5]={1,2,3,4,5};
 
-FspTimer _timer;
+// 自己位置
+//x,y,yaw
+float pose[3]={0.0f,0.0f,0.0f};
+//速度
+//vel_x,vel_y,vel_yaw
+float vel[3]={0.0f,0.0f,0.0f};
+//角速度
+//vel_right,vel_left
+float vel_now[2]={0.0f,0.0f};
+int count_before[2]={0,0};
 
+//timer 0.1周期
+FspTimer _timer;
+float timer_period = 10.f;
+
+
+//モーターのクラス
 class MOTOR {
   private:
     int AIN1;
@@ -52,9 +69,10 @@ class MOTOR {
       }
     }
 };
+//足回りの宣言
+MOTOR motor_right(2,4,3);
+MOTOR motor_left(12,13,11);
 
-MOTOR motor_right(0,1,3);
-MOTOR motor_left(12,13,5);
 
 
 
@@ -80,6 +98,7 @@ void loop() {
 
 void timer_callback(timer_callback_args_t *arg){
   Serial.println("timer_callback");
+  step();
   send_msg();
 }
 
@@ -236,7 +255,7 @@ void timer_setup(){
     Serial.println(":::errer:::   No timer to use");
     return;
   }else{
-    _timer.begin(TIMER_MODE_PERIODIC,type,ch,1.0f,50.0f,timer_callback,nullptr);
+    _timer.begin(TIMER_MODE_PERIODIC,type,ch,timer_period,50.0f,timer_callback,nullptr);//一秒間に１０回のcallback
     _timer.setup_overflow_irq();
     _timer.open();
     _timer.start();
@@ -245,3 +264,30 @@ void timer_setup(){
   }
 }
 
+void step(){
+  //r:車輪の半径[mm]　L:車輪の幅[mm]
+  float r = 15;
+  float L = 105;
+
+  //はじめに角速度の計算
+  vel_now[0] = (float(count_right-count_before[0]))*M_PI*2/float(ref);
+  vel_now[1] = (float(count_left-count_before[1]))*M_PI*2/float(ref);
+
+  //速度の計算
+  vel[0]=(float(cos(pose[2])))*r/2*(vel_now[0]+vel_now[1]);
+  vel[1]=(float(sin(pose[2])))*r/2*(vel_now[0]+vel_now[1]);
+  vel[2]=(r/L)*(vel_now[0]-vel_now[1]);
+
+  //積算
+  pose[0]=vel[0]*timer_period;
+  pose[1]=vel[1]*timer_period;
+  pose[2]=vel[2]*timer_period;
+  
+  //更新
+  count_before[0] = count_right;
+  count_before[1] = count_left;
+
+  dataArray_send[0]=int(pose[0]);
+  dataArray_send[1]=int(pose[1]);
+  dataArray_send[2]=int(pose[2]);
+}
