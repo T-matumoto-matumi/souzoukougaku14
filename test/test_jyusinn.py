@@ -2,10 +2,10 @@ import socket
 import time
 
 # ArduinoのIPアドレスとポート番号
-SSID = "cafe_00"
+SSID = "cafe_14"
 PASSWORD = "123456789"
 ESP32_IP = "192.168.4.1"  # ESP32のIPアドレス
-PORT = 80
+PORT = 8080
 
 # ソケットを作成して接続
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:

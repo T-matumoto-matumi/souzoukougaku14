@@ -6,7 +6,7 @@ ESP32_IP = "192.168.4.1"  # ESP32のIPアドレス
 ESP32_PORT = 8080         # ESP32のポート番号
 
 # 送信するfloat配列とスタートバイト
-data_array = [1.1, 2.2, 3.3, 4.4, 5.5]
+data_array = [1, 2, 3, 4, 5]
 start_byte = 0xAA
 
 # ソケットを作成してESP32に接続
@@ -18,7 +18,7 @@ print("Connected to ESP32 server")
 client_socket.sendall(struct.pack('B', start_byte))
 
 # float配列をバイナリ形式で送信
-data = struct.pack(f'{len(data_array)}f', *data_array)
+data = struct.pack(f'{len(data_array)}i', *data_array)
 client_socket.sendall(data)
 
 # ソケットを閉じる

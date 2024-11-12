@@ -1,6 +1,6 @@
 #include "WiFiS3.h"
 #include "math.h"
-#include "FspTimer.h"
+
 
 const char* SSID = "cafe_14";      // Wi-FiのSSID
 const char* PASS = "123456789";    // Wi-Fiのパスワード
@@ -35,8 +35,48 @@ float vel_now[2]={0.0f,0.0f};
 int count_before[2]={0,0};
 
 //timer 0.1周期
-FspTimer _timer;
-float timer_period = 10.f;
+float timer_period = 1.f;
+
+void read_msg(){
+  WiFiClient client = server.available();
+  if (!client) {
+    Serial.println(":::errer:::   No client");
+    return;
+  }else{
+  //ここに受信処理を書く
+    while (client.available() < 1){
+      Serial.println("wait");
+    };//データが来るまでまつ
+    uint8_t startByte = client.read();
+
+    if (startByte != 0xAA) {
+      //スタートバイトがずれていたとき
+      Serial.println(":::errer:::   Invalid start byte");
+      //ここでスタートバイトがずれたときに動かなくなっている可能性あり。
+      client.stop();
+      return;
+    }
+    // int配列を受信
+    while (client.available() < arraySize * sizeof(int));
+    client.readBytes((char*)dataArray, arraySize * sizeof(int));
+
+    // 受信データの表示
+    Serial.println(":info:   Received int data");
+    for (int i = 0; i < arraySize; i++) {
+      Serial.println(dataArray[i]);
+    }
+  }
+
+  if (!client.connected()) {
+    Serial.println(":info:   Client disconnected");
+    client.stop();  //接続が切れてたらクライアントを終了
+    return;
+  }
+
+  if (client.available() <= 0) {
+    Serial.println(":info:   data not coming");  // データが来なかったらなにもしない
+  }
+}
 
 
 //モーターのクラス
@@ -66,8 +106,8 @@ class MOTOR {
         analogWrite(PWMA,abs(power));
       }else{
         ;//errer
-      }
-    }
+      };
+    };
 };
 //足回りの宣言
 MOTOR motor_right(2,4,3);
@@ -77,30 +117,20 @@ MOTOR motor_left(12,13,11);
 
 
 void setup() {
-  attachInterrupt(digitalPinToInterrupt(PHASE_A_right),A_CHANGE_RIGHT,CHANGE);
-  attachInterrupt(digitalPinToInterrupt(PHASE_B_right),B_CHANGE_RIGHT,CHANGE);
-  attachInterrupt(digitalPinToInterrupt(PHASE_A_left),A_CHANGE_LEFT,CHANGE);
-  attachInterrupt(digitalPinToInterrupt(PHASE_B_left),B_CHANGE_LEFT,CHANGE);
   count_right = 0;
   count_left = 0;
   Serial.begin(9600);
-  wifi_setup();
-  timer_setup();
 }
 
 
 
 void loop() {
-  read_msg();
+  //read_msg();
   motor_right.setpower(dataArray[0]);
   motor_left.setpower(dataArray[1]);
+
 }
 
-void timer_callback(timer_callback_args_t *arg){
-  Serial.println("timer_callback");
-  step();
-  send_msg();
-}
 
 
 void wifi_setup(){
@@ -132,44 +162,6 @@ void send_msg(){
   }
 }
 
-void read_msg(){
-  WiFiClient client = server.available();
-  if (!client) {
-    Serial.println(":::errer:::   No client");
-    return;
-  }else{
-  //ここに受信処理を書く
-    while (client.available() < 1);//データが来るまでまつ
-    uint8_t startByte = client.read();
-
-    if (startByte != 0xAA) {
-      //スタートバイトがずれていたとき
-      Serial.println(":::errer:::   Invalid start byte");
-      //ここでスタートバイトがずれたときに動かなくなっている可能性あり。
-      //client.stop();
-      return;
-    }
-    // int配列を受信
-    while (client.available() < arraySize * sizeof(int));
-    client.readBytes((char*)dataArray, arraySize * sizeof(int));
-
-    // 受信データの表示
-    Serial.println(":info:   Received int data");
-    for (int i = 0; i < arraySize; i++) {
-      Serial.println(dataArray[i]);
-    }
-  }
-
-  if (!client.connected()) {
-    Serial.println(":info:   Client disconnected");
-    client.stop();  //接続が切れてたらクライアントを終了
-    return;
-  }
-
-  if (client.available() <= 0) {
-    Serial.println(":info:   data not coming");  // データが来なかったらなにもしない
-  }
-}
 
 void A_CHANGE_RIGHT(){
   if(digitalRead(PHASE_A_right)==HIGH){
@@ -247,22 +239,6 @@ void B_CHANGE_LEFT(){
   }
 }
 
-void timer_setup(){
-  //setup ok:1 ,setup errer:0
-  uint8_t type;
-  int8_t ch = FspTimer::get_available_timer(type);
-  if(ch<0){
-    Serial.println(":::errer:::   No timer to use");
-    return;
-  }else{
-    _timer.begin(TIMER_MODE_PERIODIC,type,ch,timer_period,50.0f,timer_callback,nullptr);//一秒間に１０回のcallback
-    _timer.setup_overflow_irq();
-    _timer.open();
-    _timer.start();
-    Serial.println(":info:   Timer_callback start");
-    return;
-  }
-}
 
 void step(){
   //r:車輪の半径[mm]　L:車輪の幅[mm]
@@ -279,9 +255,9 @@ void step(){
   vel[2]=(r/L)*(vel_now[0]-vel_now[1]);
 
   //積算
-  pose[0]=vel[0]*timer_period;
-  pose[1]=vel[1]*timer_period;
-  pose[2]=vel[2]*timer_period;
+  pose[0]+=vel[0]*timer_period;
+  pose[1]+=vel[1]*timer_period;
+  pose[2]+=vel[2]*timer_period;
   
   //更新
   count_before[0] = count_right;

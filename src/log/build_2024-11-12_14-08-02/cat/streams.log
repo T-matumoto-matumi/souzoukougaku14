@@ -1,0 +1,27 @@
+[0.495s] Invoking command in '/home/hamilton/souzou/src/cat': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/hamilton/souzou/src/build/cat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/cat build --build-base /home/hamilton/souzou/src/build/cat/build install --record /home/hamilton/souzou/src/build/cat/install.log --single-version-externally-managed install_data
+[0.671s] running egg_info
+[0.671s] writing ../build/cat/cat.egg-info/PKG-INFO
+[0.671s] writing dependency_links to ../build/cat/cat.egg-info/dependency_links.txt
+[0.671s] writing entry points to ../build/cat/cat.egg-info/entry_points.txt
+[0.671s] writing requirements to ../build/cat/cat.egg-info/requires.txt
+[0.673s] writing top-level names to ../build/cat/cat.egg-info/top_level.txt
+[0.674s] reading manifest file '../build/cat/cat.egg-info/SOURCES.txt'
+[0.674s] writing manifest file '../build/cat/cat.egg-info/SOURCES.txt'
+[0.674s] running build
+[0.674s] running build_py
+[0.675s] copying cat/tcp_send_node.py -> /home/hamilton/souzou/src/build/cat/build/lib/cat
+[0.675s] running install
+[0.675s] running install_lib
+[0.676s] copying /home/hamilton/souzou/src/build/cat/build/lib/cat/tcp_send_node.py -> /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat
+[0.677s] byte-compiling /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat/tcp_send_node.py to tcp_send_node.cpython-310.pyc
+[0.678s] running install_data
+[0.678s] running install_egg_info
+[0.680s] removing '/home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat-0.0.0-py3.10.egg-info' (and everything under it)
+[0.681s] Copying ../build/cat/cat.egg-info to /home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages/cat-0.0.0-py3.10.egg-info
+[0.682s] running install_scripts
+[0.700s] Installing pc_controller script to /home/hamilton/souzou/src/install/cat/lib/cat
+[0.700s] Installing state_machine script to /home/hamilton/souzou/src/install/cat/lib/cat
+[0.700s] Installing tcp_receive_node script to /home/hamilton/souzou/src/install/cat/lib/cat
+[0.700s] Installing tcp_send_node script to /home/hamilton/souzou/src/install/cat/lib/cat
+[0.700s] writing list of installed files to '/home/hamilton/souzou/src/build/cat/install.log'
+[0.720s] Invoked command in '/home/hamilton/souzou/src/cat' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/hamilton/souzou/src/build/cat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/src/install/cat/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/cat build --build-base /home/hamilton/souzou/src/build/cat/build install --record /home/hamilton/souzou/src/build/cat/install.log --single-version-externally-managed install_data

@@ -3,7 +3,7 @@ from rclpy.node import Node
 import socket
 import struct
 
-HOST_IP = '192,48,56,1'
+HOST_IP = '192.48.56.1'
 PORT = 8080
 
 class UdpReceiveNode(Node):
