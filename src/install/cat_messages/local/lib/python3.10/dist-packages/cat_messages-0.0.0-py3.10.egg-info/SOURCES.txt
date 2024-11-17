@@ -1,1 +1,9 @@
-/home/hamilton/souzou/src/build/cat_messages/ament_cmake_python/cat_messages/cat_messages.egg-info/SOURCES.txt
+setup.py
+cat_messages/__init__.py
+cat_messages.egg-info/PKG-INFO
+cat_messages.egg-info/SOURCES.txt
+cat_messages.egg-info/dependency_links.txt
+cat_messages.egg-info/top_level.txt
+cat_messages/msg/__init__.py
+cat_messages/msg/_joy_cat.py
+cat_messages/msg/_senser.py

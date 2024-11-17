@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hamilton/souzou/src/cat_messages
+CMAKE_SOURCE_DIR = /home/takumi/souzoukougaku14/src/cat_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hamilton/souzou/src/build/cat_messages
+CMAKE_BINARY_DIR = /home/takumi/souzoukougaku14/src/build/cat_messages
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cat_messages__rosidl_generator_c.dir/depend.make
@@ -83,8 +83,9 @@ rosidl_generator_c/cat_messages/msg/joy_cat.h: /opt/ros/humble/share/rosidl_gene
 rosidl_generator_c/cat_messages/msg/joy_cat.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/cat_messages/msg/joy_cat.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/cat_messages/msg/joy_cat.h: rosidl_adapter/cat_messages/msg/JoyCat.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hamilton/souzou/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/hamilton/souzou/src/build/cat_messages/rosidl_generator_c__arguments.json
+rosidl_generator_c/cat_messages/msg/joy_cat.h: rosidl_adapter/cat_messages/msg/Senser.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.h: rosidl_generator_c/cat_messages/msg/joy_cat.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.h
@@ -95,36 +96,67 @@ rosidl_generator_c/cat_messages/msg/detail/joy_cat__struct.h: rosidl_generator_c
 rosidl_generator_c/cat_messages/msg/detail/joy_cat__type_support.h: rosidl_generator_c/cat_messages/msg/joy_cat.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cat_messages/msg/detail/joy_cat__type_support.h
 
+rosidl_generator_c/cat_messages/msg/senser.h: rosidl_generator_c/cat_messages/msg/joy_cat.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cat_messages/msg/senser.h
+
+rosidl_generator_c/cat_messages/msg/detail/senser__functions.h: rosidl_generator_c/cat_messages/msg/joy_cat.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cat_messages/msg/detail/senser__functions.h
+
+rosidl_generator_c/cat_messages/msg/detail/senser__struct.h: rosidl_generator_c/cat_messages/msg/joy_cat.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cat_messages/msg/detail/senser__struct.h
+
+rosidl_generator_c/cat_messages/msg/detail/senser__type_support.h: rosidl_generator_c/cat_messages/msg/joy_cat.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cat_messages/msg/detail/senser__type_support.h
+
 rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c: rosidl_generator_c/cat_messages/msg/joy_cat.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c
+
+rosidl_generator_c/cat_messages/msg/detail/senser__functions.c: rosidl_generator_c/cat_messages/msg/joy_cat.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cat_messages/msg/detail/senser__functions.c
 
 CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o: CMakeFiles/cat_messages__rosidl_generator_c.dir/flags.make
 CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o: rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c
 CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o: CMakeFiles/cat_messages__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hamilton/souzou/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o -MF CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o.d -o CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o -c /home/hamilton/souzou/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o -MF CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o.d -o CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o -c /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c
 
 CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hamilton/souzou/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c > CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c > CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.i
 
 CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hamilton/souzou/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c -o CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c -o CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.s
+
+CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.o: CMakeFiles/cat_messages__rosidl_generator_c.dir/flags.make
+CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.o: rosidl_generator_c/cat_messages/msg/detail/senser__functions.c
+CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.o: CMakeFiles/cat_messages__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.o -MF CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.o.d -o CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.o -c /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c
+
+CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c > CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.i
+
+CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c -o CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.s
 
 # Object files for target cat_messages__rosidl_generator_c
 cat_messages__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o"
+"CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o" \
+"CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.o"
 
 # External object files for target cat_messages__rosidl_generator_c
 cat_messages__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libcat_messages__rosidl_generator_c.so: CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o
+libcat_messages__rosidl_generator_c.so: CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/senser__functions.c.o
 libcat_messages__rosidl_generator_c.so: CMakeFiles/cat_messages__rosidl_generator_c.dir/build.make
 libcat_messages__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcat_messages__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libcat_messages__rosidl_generator_c.so: CMakeFiles/cat_messages__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hamilton/souzou/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libcat_messages__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libcat_messages__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cat_messages__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,7 +171,12 @@ CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_m
 CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.h
 CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_messages/msg/detail/joy_cat__struct.h
 CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_messages/msg/detail/joy_cat__type_support.h
+CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_messages/msg/detail/senser__functions.c
+CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_messages/msg/detail/senser__functions.h
+CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_messages/msg/detail/senser__struct.h
+CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_messages/msg/detail/senser__type_support.h
 CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_messages/msg/joy_cat.h
-	cd /home/hamilton/souzou/src/build/cat_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hamilton/souzou/src/cat_messages /home/hamilton/souzou/src/cat_messages /home/hamilton/souzou/src/build/cat_messages /home/hamilton/souzou/src/build/cat_messages /home/hamilton/souzou/src/build/cat_messages/CMakeFiles/cat_messages__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+CMakeFiles/cat_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cat_messages/msg/senser.h
+	cd /home/takumi/souzoukougaku14/src/build/cat_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/takumi/souzoukougaku14/src/cat_messages /home/takumi/souzoukougaku14/src/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles/cat_messages__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cat_messages__rosidl_generator_c.dir/depend
 

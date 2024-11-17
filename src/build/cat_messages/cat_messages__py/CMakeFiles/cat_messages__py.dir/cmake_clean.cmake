@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/cat_messages/msg/__init__.py"
   "../rosidl_generator_py/cat_messages/msg/_joy_cat.py"
   "../rosidl_generator_py/cat_messages/msg/_joy_cat_s.c"
+  "../rosidl_generator_py/cat_messages/msg/_senser.py"
+  "../rosidl_generator_py/cat_messages/msg/_senser_s.c"
   "CMakeFiles/cat_messages__py"
 )
 

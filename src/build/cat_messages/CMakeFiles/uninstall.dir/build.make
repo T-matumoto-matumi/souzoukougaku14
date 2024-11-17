@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hamilton/souzou/src/cat_messages
+CMAKE_SOURCE_DIR = /home/takumi/souzoukougaku14/src/cat_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hamilton/souzou/src/build/cat_messages
+CMAKE_BINARY_DIR = /home/takumi/souzoukougaku14/src/build/cat_messages
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/hamilton/souzou/src/build/cat_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hamilton/souzou/src/cat_messages /home/hamilton/souzou/src/cat_messages /home/hamilton/souzou/src/build/cat_messages /home/hamilton/souzou/src/build/cat_messages /home/hamilton/souzou/src/build/cat_messages/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/takumi/souzoukougaku14/src/build/cat_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/takumi/souzoukougaku14/src/cat_messages /home/takumi/souzoukougaku14/src/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

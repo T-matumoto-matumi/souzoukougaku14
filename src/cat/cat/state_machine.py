@@ -27,7 +27,7 @@ class StateMachine(Node):
         self.joy_msg = JoyCat()
         self.vel_msg = Twist()
         self.vel_pub = self.create_publisher(
-            Twist,"/cmd_vel",10
+            Twist,"cmd_vel",10
         )
         
     def joy_callback(self,msg):

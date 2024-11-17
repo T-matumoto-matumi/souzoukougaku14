@@ -1,1 +1,2 @@
-/home/hamilton/souzou/src/build/cat_messages/rosidl_generator_py/cat_messages/msg/__init__.py
+from cat_messages.msg._joy_cat import JoyCat  # noqa: F401
+from cat_messages.msg._senser import Senser  # noqa: F401

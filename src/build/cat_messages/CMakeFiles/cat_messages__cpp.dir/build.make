@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hamilton/souzou/src/cat_messages
+CMAKE_SOURCE_DIR = /home/takumi/souzoukougaku14/src/cat_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hamilton/souzou/src/build/cat_messages
+CMAKE_BINARY_DIR = /home/takumi/souzoukougaku14/src/build/cat_messages
 
 # Utility rule file for cat_messages__cpp.
 
@@ -70,6 +70,10 @@ CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
 CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__builder.hpp
 CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__struct.hpp
 CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__traits.hpp
+CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/senser.hpp
+CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__builder.hpp
+CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__struct.hpp
+CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__traits.hpp
 
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,8 +91,9 @@ rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: /opt/ros/humble/share/rosidl_
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: rosidl_adapter/cat_messages/msg/JoyCat.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hamilton/souzou/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/hamilton/souzou/src/build/cat_messages/rosidl_generator_cpp__arguments.json
+rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: rosidl_adapter/cat_messages/msg/Senser.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__builder.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__builder.hpp
@@ -99,11 +104,27 @@ rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__struct.hpp: rosidl_generat
 rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__traits.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__traits.hpp
 
+rosidl_generator_cpp/cat_messages/msg/senser.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/senser.hpp
+
+rosidl_generator_cpp/cat_messages/msg/detail/senser__builder.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/detail/senser__builder.hpp
+
+rosidl_generator_cpp/cat_messages/msg/detail/senser__struct.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/detail/senser__struct.hpp
+
+rosidl_generator_cpp/cat_messages/msg/detail/senser__traits.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/detail/senser__traits.hpp
+
 cat_messages__cpp: CMakeFiles/cat_messages__cpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__builder.hpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__struct.hpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__traits.hpp
+cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__builder.hpp
+cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__struct.hpp
+cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__traits.hpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
+cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/senser.hpp
 cat_messages__cpp: CMakeFiles/cat_messages__cpp.dir/build.make
 .PHONY : cat_messages__cpp
 
@@ -116,6 +137,6 @@ CMakeFiles/cat_messages__cpp.dir/clean:
 .PHONY : CMakeFiles/cat_messages__cpp.dir/clean
 
 CMakeFiles/cat_messages__cpp.dir/depend:
-	cd /home/hamilton/souzou/src/build/cat_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hamilton/souzou/src/cat_messages /home/hamilton/souzou/src/cat_messages /home/hamilton/souzou/src/build/cat_messages /home/hamilton/souzou/src/build/cat_messages /home/hamilton/souzou/src/build/cat_messages/CMakeFiles/cat_messages__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/takumi/souzoukougaku14/src/build/cat_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/takumi/souzoukougaku14/src/cat_messages /home/takumi/souzoukougaku14/src/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles/cat_messages__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cat_messages__cpp.dir/depend
 

@@ -1,0 +1,6 @@
+[0.012s] Invoking command in '/home/takumi/souzoukougaku14/src/build/cat_messages': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takumi/souzoukougaku14/src/build/cat_messages -- -j8 -l8
+[0.020s] [0mCMake Error: The current CMakeCache.txt directory /home/takumi/souzoukougaku14/src/build/cat_messages/CMakeCache.txt is different than the directory /home/hamilton/souzou/src/build/cat_messages where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.031s] [0mCMake Error: The source directory "/home/hamilton/souzou/src/cat_messages" does not exist.
+[0.031s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.032s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
+[0.034s] Invoked command in '/home/takumi/souzoukougaku14/src/build/cat_messages' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takumi/souzoukougaku14/src/build/cat_messages -- -j8 -l8

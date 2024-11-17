@@ -1,0 +1,356 @@
+[0.000000] (-) TimerEvent: {}
+[0.000212] (cat_messages) JobQueued: {'identifier': 'cat_messages', 'dependencies': OrderedDict()}
+[0.000780] (cat) JobQueued: {'identifier': 'cat', 'dependencies': OrderedDict([('cat_messages', '/home/takumi/souzoukougaku14/src/install/cat_messages')])}
+[0.000838] (cat_messages) JobStarted: {'identifier': 'cat_messages'}
+[0.010170] (cat_messages) JobProgress: {'identifier': 'cat_messages', 'progress': 'cmake'}
+[0.010849] (cat_messages) Command: {'cmd': ['/usr/bin/cmake', '/home/takumi/souzoukougaku14/src/cat_messages', '-DCMAKE_INSTALL_PREFIX=/home/takumi/souzoukougaku14/src/install/cat_messages'], 'cwd': '/home/takumi/souzoukougaku14/src/build/cat_messages', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takumi'), ('GIT_ASKPASS', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/takumi'), ('OLDPWD', '/home/takumi/souzoukougaku14'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-58713dd2-93e3-46b1-b932-7b147f058e08.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takumi'), ('NAME', 'LAPTOP-6SCLUJEB'), ('WSL_INTEROP', '/run/WSL/570_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/home/takumi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Takumi/anaconda3:/mnt/c/Users/Takumi/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/Takumi/anaconda3/Library/usr/bin:/mnt/c/Users/Takumi/anaconda3/Library/bin:/mnt/c/Users/Takumi/anaconda3/Scripts:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Takumi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Takumi/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-1e5e44996b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/takumi/souzoukougaku14/src/build/cat_messages'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099328] (-) TimerEvent: {}
+[0.199623] (-) TimerEvent: {}
+[0.274852] (cat_messages) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299687] (-) TimerEvent: {}
+[0.399943] (-) TimerEvent: {}
+[0.500206] (-) TimerEvent: {}
+[0.588341] (cat_messages) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.600263] (-) TimerEvent: {}
+[0.700578] (-) TimerEvent: {}
+[0.748320] (cat_messages) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.800870] (-) TimerEvent: {}
+[0.860537] (cat_messages) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.865666] (cat_messages) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.866383] (cat_messages) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.867430] (cat_messages) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.872233] (cat_messages) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.901102] (-) TimerEvent: {}
+[0.967346] (cat_messages) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.972817] (cat_messages) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.973012] (cat_messages) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.973347] (cat_messages) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.001221] (-) TimerEvent: {}
+[1.021176] (cat_messages) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.101407] (-) TimerEvent: {}
+[1.142914] (cat_messages) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.201513] (-) TimerEvent: {}
+[1.273345] (cat_messages) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.283404] (cat_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.297399] (cat_messages) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.301569] (-) TimerEvent: {}
+[1.401806] (-) TimerEvent: {}
+[1.449840] (cat_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.501944] (-) TimerEvent: {}
+[1.602398] (-) TimerEvent: {}
+[1.702937] (-) TimerEvent: {}
+[1.704581] (cat_messages) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.803213] (-) TimerEvent: {}
+[1.851454] (cat_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.903467] (-) TimerEvent: {}
+[2.004040] (-) TimerEvent: {}
+[2.028077] (cat_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.101563] (cat_messages) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.104159] (-) TimerEvent: {}
+[2.104474] (cat_messages) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.204281] (-) TimerEvent: {}
+[2.290869] (cat_messages) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.291038] (cat_messages) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.291082] (cat_messages) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.291121] (cat_messages) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.304474] (-) TimerEvent: {}
+[2.306444] (cat_messages) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.360656] (cat_messages) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.402672] (cat_messages) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.404612] (-) TimerEvent: {}
+[2.405079] (cat_messages) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.409914] (cat_messages) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.462745] (cat_messages) StdoutLine: {'line': b'-- Generating done\n'}
+[2.465756] (cat_messages) StdoutLine: {'line': b'-- Build files have been written to: /home/takumi/souzoukougaku14/src/build/cat_messages\n'}
+[2.472545] (cat_messages) CommandEnded: {'returncode': 0}
+[2.476524] (cat_messages) JobProgress: {'identifier': 'cat_messages', 'progress': 'build'}
+[2.476628] (cat_messages) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/takumi/souzoukougaku14/src/build/cat_messages', '--', '-j8', '-l8'], 'cwd': '/home/takumi/souzoukougaku14/src/build/cat_messages', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takumi'), ('GIT_ASKPASS', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/takumi'), ('OLDPWD', '/home/takumi/souzoukougaku14'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-58713dd2-93e3-46b1-b932-7b147f058e08.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takumi'), ('NAME', 'LAPTOP-6SCLUJEB'), ('WSL_INTEROP', '/run/WSL/570_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/home/takumi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Takumi/anaconda3:/mnt/c/Users/Takumi/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/Takumi/anaconda3/Library/usr/bin:/mnt/c/Users/Takumi/anaconda3/Library/bin:/mnt/c/Users/Takumi/anaconda3/Scripts:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Takumi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Takumi/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-1e5e44996b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/takumi/souzoukougaku14/src/build/cat_messages'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.504826] (-) TimerEvent: {}
+[2.505700] (cat_messages) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.515727] (cat_messages) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.528249] (cat_messages) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_cat_messages\n'}
+[2.604953] (-) TimerEvent: {}
+[2.705321] (-) TimerEvent: {}
+[2.762863] (cat_messages) StdoutLine: {'line': b'running egg_info\n'}
+[2.763591] (cat_messages) StdoutLine: {'line': b'creating cat_messages.egg-info\n'}
+[2.764319] (cat_messages) StdoutLine: {'line': b'writing cat_messages.egg-info/PKG-INFO\n'}
+[2.764596] (cat_messages) StdoutLine: {'line': b'writing dependency_links to cat_messages.egg-info/dependency_links.txt\n'}
+[2.765187] (cat_messages) StdoutLine: {'line': b'writing top-level names to cat_messages.egg-info/top_level.txt\n'}
+[2.765367] (cat_messages) StdoutLine: {'line': b"writing manifest file 'cat_messages.egg-info/SOURCES.txt'\n"}
+[2.768307] (cat_messages) StdoutLine: {'line': b'[  6%] Built target cat_messages__cpp\n'}
+[2.769031] (cat_messages) StdoutLine: {'line': b"reading manifest file 'cat_messages.egg-info/SOURCES.txt'\n"}
+[2.769692] (cat_messages) StdoutLine: {'line': b"writing manifest file 'cat_messages.egg-info/SOURCES.txt'\n"}
+[2.771365] (cat_messages) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/cat_messages__rosidl_generator_c.dir/rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.c.o\x1b[0m\n'}
+[2.779286] (cat_messages) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.779516] (cat_messages) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.779601] (cat_messages) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.800530] (cat_messages) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_cat_messages_egg\n'}
+[2.805459] (-) TimerEvent: {}
+[2.850991] (cat_messages) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcat_messages__rosidl_generator_c.so\x1b[0m\n'}
+[2.905589] (-) TimerEvent: {}
+[2.930433] (cat_messages) StdoutLine: {'line': b'[ 22%] Built target cat_messages__rosidl_generator_c\n'}
+[2.941252] (cat_messages) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.942251] (cat_messages) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.942409] (cat_messages) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.005707] (-) TimerEvent: {}
+[3.018190] (cat_messages) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/cat_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cat_messages/msg/joy_cat__type_support.cpp.o\x1b[0m\n'}
+[3.061148] (cat_messages) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/cat_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cat_messages/msg/detail/dds_fastrtps/joy_cat__type_support.cpp.o\x1b[0m\n'}
+[3.063880] (cat_messages) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/cat_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cat_messages/msg/detail/joy_cat__type_support.cpp.o\x1b[0m\n'}
+[3.105845] (-) TimerEvent: {}
+[3.206323] (-) TimerEvent: {}
+[3.220732] (cat_messages) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/cat_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/cat_messages/msg/joy_cat__type_support.cpp.o\x1b[0m\n'}
+[3.262547] (cat_messages) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/cat_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cat_messages/msg/detail/joy_cat__type_support_c.cpp.o\x1b[0m\n'}
+[3.262824] (cat_messages) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcat_messages__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.272514] (cat_messages) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__type_support.c.o\x1b[0m\n'}
+[3.306463] (-) TimerEvent: {}
+[3.358861] (cat_messages) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libcat_messages__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.406619] (-) TimerEvent: {}
+[3.460468] (cat_messages) StdoutLine: {'line': b'[ 58%] Built target cat_messages__rosidl_typesupport_c\n'}
+[3.463060] (cat_messages) StdoutLine: {'line': b'[ 58%] Built target cat_messages__rosidl_typesupport_introspection_c\n'}
+[3.484760] (cat_messages) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcat_messages__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.506761] (-) TimerEvent: {}
+[3.555035] (cat_messages) StdoutLine: {'line': b'[ 61%] Built target cat_messages__rosidl_typesupport_cpp\n'}
+[3.579097] (cat_messages) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcat_messages__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.606908] (-) TimerEvent: {}
+[3.661498] (cat_messages) StdoutLine: {'line': b'[ 64%] Built target cat_messages__rosidl_typesupport_introspection_cpp\n'}
+[3.662094] (cat_messages) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libcat_messages__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.662184] (cat_messages) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcat_messages__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.707066] (-) TimerEvent: {}
+[3.781419] (cat_messages) StdoutLine: {'line': b'[ 70%] Built target cat_messages__rosidl_typesupport_fastrtps_c\n'}
+[3.791268] (cat_messages) StdoutLine: {'line': b'[ 70%] Built target cat_messages__rosidl_typesupport_fastrtps_cpp\n'}
+[3.807203] (-) TimerEvent: {}
+[3.811325] (cat_messages) StdoutLine: {'line': b'[ 70%] Built target cat_messages\n'}
+[3.833306] (cat_messages) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.907375] (-) TimerEvent: {}
+[4.007841] (-) TimerEvent: {}
+[4.108311] (-) TimerEvent: {}
+[4.196031] (cat_messages) StdoutLine: {'line': b'[ 74%] Built target cat_messages__py\n'}
+[4.208438] (-) TimerEvent: {}
+[4.219549] (cat_messages) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/cat_messages__rosidl_generator_py.dir/rosidl_generator_py/cat_messages/msg/_joy_cat_s.c.o\x1b[0m\n'}
+[4.308590] (-) TimerEvent: {}
+[4.394844] (cat_messages) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cat_messages/libcat_messages__rosidl_generator_py.so\x1b[0m\n'}
+[4.408720] (-) TimerEvent: {}
+[4.467156] (cat_messages) StdoutLine: {'line': b'[ 80%] Built target cat_messages__rosidl_generator_py\n'}
+[4.488066] (cat_messages) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/cat_messages__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.488365] (cat_messages) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/cat_messages__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.488447] (cat_messages) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/cat_messages__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.508906] (-) TimerEvent: {}
+[4.573616] (cat_messages) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cat_messages/cat_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.576168] (cat_messages) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cat_messages/cat_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.583677] (cat_messages) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cat_messages/cat_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.609054] (-) TimerEvent: {}
+[4.627756] (cat_messages) StdoutLine: {'line': b'[100%] Built target cat_messages__rosidl_typesupport_c__pyext\n'}
+[4.627983] (cat_messages) StdoutLine: {'line': b'[100%] Built target cat_messages__rosidl_typesupport_introspection_c__pyext\n'}
+[4.661008] (cat_messages) StdoutLine: {'line': b'[100%] Built target cat_messages__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.672834] (cat_messages) CommandEnded: {'returncode': 0}
+[4.709169] (-) TimerEvent: {}
+[4.731513] (cat_messages) JobProgress: {'identifier': 'cat_messages', 'progress': 'install'}
+[4.742272] (cat_messages) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/takumi/souzoukougaku14/src/build/cat_messages'], 'cwd': '/home/takumi/souzoukougaku14/src/build/cat_messages', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takumi'), ('GIT_ASKPASS', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/takumi'), ('OLDPWD', '/home/takumi/souzoukougaku14'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-58713dd2-93e3-46b1-b932-7b147f058e08.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takumi'), ('NAME', 'LAPTOP-6SCLUJEB'), ('WSL_INTEROP', '/run/WSL/570_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/home/takumi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Takumi/anaconda3:/mnt/c/Users/Takumi/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/Takumi/anaconda3/Library/usr/bin:/mnt/c/Users/Takumi/anaconda3/Library/bin:/mnt/c/Users/Takumi/anaconda3/Scripts:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Takumi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Takumi/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-1e5e44996b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/takumi/souzoukougaku14/src/build/cat_messages'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.748912] (cat_messages) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.749875] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/ament_index/resource_index/rosidl_interfaces/cat_messages\n'}
+[4.750144] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages\n'}
+[4.750683] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg\n'}
+[4.750923] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail\n'}
+[4.751132] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__functions.c\n'}
+[4.751302] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__type_support.h\n'}
+[4.751451] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__struct.h\n'}
+[4.751594] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__functions.h\n'}
+[4.751788] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/joy_cat.h\n'}
+[4.751865] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.752166] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/environment/library_path.sh\n'}
+[4.752411] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/environment/library_path.dsv\n'}
+[4.752835] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_generator_c.so\n'}
+[4.753350] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_generator_c.so" to ""\n'}
+[4.753617] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages\n'}
+[4.753749] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg\n'}
+[4.753837] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.753903] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail\n'}
+[4.754017] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__rosidl_typesupport_fastrtps_c.h\n'}
+[4.754173] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_fastrtps_c.so\n'}
+[4.754333] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.754423] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages\n'}
+[4.754681] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg\n'}
+[4.754834] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail\n'}
+[4.755041] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h\n'}
+[4.755121] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__type_support.c\n'}
+[4.755187] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.755251] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_introspection_c.so\n'}
+[4.755637] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.755855] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_c.so\n'}
+[4.756067] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_c.so" to ""\n'}
+[4.756224] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages\n'}
+[4.756418] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg\n'}
+[4.756574] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail\n'}
+[4.756728] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__struct.hpp\n'}
+[4.756876] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__builder.hpp\n'}
+[4.757120] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__traits.hpp\n'}
+[4.757269] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/joy_cat.hpp\n'}
+[4.757419] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages\n'}
+[4.757568] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg\n'}
+[4.757718] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail\n'}
+[4.757919] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/dds_fastrtps\n'}
+[4.757996] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.758066] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.758131] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.758286] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.758436] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages\n'}
+[4.758584] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg\n'}
+[4.758734] (cat_messages) StdoutLine: {'line': b'-- Up-to-date: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail\n'}
+[4.758883] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__type_support.cpp\n'}
+[4.759032] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/include/cat_messages/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.759270] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_introspection_cpp.so\n'}
+[4.759352] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.759420] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_cpp.so\n'}
+[4.759480] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_typesupport_cpp.so" to ""\n'}
+[4.759544] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/environment/pythonpath.sh\n'}
+[4.759606] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/environment/pythonpath.dsv\n'}
+[4.759671] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages-0.0.0-py3.10.egg-info\n'}
+[4.760316] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.760552] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.760789] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.760875] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.761094] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages\n'}
+[4.761175] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/cat_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.761279] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/msg\n'}
+[4.761414] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/msg/_joy_cat_s.c\n'}
+[4.761855] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/msg/_joy_cat.py\n'}
+[4.762258] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/msg/__init__.py\n'}
+[4.762449] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/cat_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.762591] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/cat_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.762742] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/_cat_messages_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.762813] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/_cat_messages_s.ep.rosidl_typesupport_c.c\n'}
+[4.762981] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.763195] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/libcat_messages__rosidl_generator_py.so\n'}
+[4.763273] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/__init__.py\n'}
+[4.809369] (-) TimerEvent: {}
+[4.810362] (cat_messages) StdoutLine: {'line': b"Listing '/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages'...\n"}
+[4.810502] (cat_messages) StdoutLine: {'line': b"Compiling '/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/__init__.py'...\n"}
+[4.810544] (cat_messages) StdoutLine: {'line': b"Listing '/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/msg'...\n"}
+[4.810580] (cat_messages) StdoutLine: {'line': b"Compiling '/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/msg/__init__.py'...\n"}
+[4.810622] (cat_messages) StdoutLine: {'line': b"Compiling '/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/msg/_joy_cat.py'...\n"}
+[4.814842] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/cat_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.815293] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/cat_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.815476] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/cat_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.815592] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/cat_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.815955] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/cat_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.816471] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages/cat_messages/cat_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.816595] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_generator_py.so\n'}
+[4.816636] (cat_messages) StdoutLine: {'line': b'-- Set runtime path of "/home/takumi/souzoukougaku14/src/install/cat_messages/lib/libcat_messages__rosidl_generator_py.so" to ""\n'}
+[4.817097] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/msg/JoyCat.idl\n'}
+[4.817262] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/msg/JoyCat.msg\n'}
+[4.817517] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/ament_index/resource_index/package_run_dependencies/cat_messages\n'}
+[4.818645] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/ament_index/resource_index/parent_prefix_path/cat_messages\n'}
+[4.818860] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/environment/ament_prefix_path.sh\n'}
+[4.819026] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/environment/ament_prefix_path.dsv\n'}
+[4.819175] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/environment/path.sh\n'}
+[4.819364] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/environment/path.dsv\n'}
+[4.819549] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/local_setup.bash\n'}
+[4.819719] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/local_setup.sh\n'}
+[4.819872] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/local_setup.zsh\n'}
+[4.820015] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/local_setup.dsv\n'}
+[4.820183] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.dsv\n'}
+[4.821157] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/ament_index/resource_index/packages/cat_messages\n'}
+[4.821514] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/export_cat_messages__rosidl_generator_cExport.cmake\n'}
+[4.821675] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/export_cat_messages__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.822958] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/export_cat_messages__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.823141] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/export_cat_messages__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.823340] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messages__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.823965] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messages__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.824139] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messages__rosidl_typesupport_cExport.cmake\n'}
+[4.824769] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messages__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.824901] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/export_cat_messages__rosidl_generator_cppExport.cmake\n'}
+[4.825377] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/export_cat_messages__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.825535] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/export_cat_messages__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.825705] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messages__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.825913] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messages__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.826282] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messages__rosidl_typesupport_cppExport.cmake\n'}
+[4.826431] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messages__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.826893] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/export_cat_messages__rosidl_generator_pyExport.cmake\n'}
+[4.827047] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/export_cat_messages__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.827224] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/rosidl_cmake-extras.cmake\n'}
+[4.827635] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.827795] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.827930] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.828084] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.828250] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.828392] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.828532] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messagesConfig.cmake\n'}
+[4.828712] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/cmake/cat_messagesConfig-version.cmake\n'}
+[4.828875] (cat_messages) StdoutLine: {'line': b'-- Installing: /home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.xml\n'}
+[4.831354] (cat_messages) CommandEnded: {'returncode': 0}
+[4.909641] (-) TimerEvent: {}
+[4.915541] (cat_messages) JobEnded: {'identifier': 'cat_messages', 'rc': 0}
+[4.916829] (cat) JobStarted: {'identifier': 'cat'}
+[5.009875] (-) TimerEvent: {}
+[5.110250] (-) TimerEvent: {}
+[5.210632] (-) TimerEvent: {}
+[5.311007] (-) TimerEvent: {}
+[5.411399] (-) TimerEvent: {}
+[5.511811] (-) TimerEvent: {}
+[5.612280] (-) TimerEvent: {}
+[5.712612] (-) TimerEvent: {}
+[5.813010] (-) TimerEvent: {}
+[5.816941] (cat) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/cat', 'build', '--build-base', '/home/takumi/souzoukougaku14/src/build/cat/build', 'install', '--record', '/home/takumi/souzoukougaku14/src/build/cat/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/takumi/souzoukougaku14/src/cat', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'takumi', 'GIT_ASKPASS': '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/takumi/souzoukougaku14/src/install/cat_messages/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/takumi', 'OLDPWD': '/home/takumi/souzoukougaku14', 'TERM_PROGRAM_VERSION': '1.95.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-58713dd2-93e3-46b1-b932-7b147f058e08.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'takumi', 'NAME': 'LAPTOP-6SCLUJEB', 'WSL_INTEROP': '/run/WSL/570_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/takumi/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/home/takumi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Takumi/anaconda3:/mnt/c/Users/Takumi/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/Takumi/anaconda3/Library/usr/bin:/mnt/c/Users/Takumi/anaconda3/Library/bin:/mnt/c/Users/Takumi/anaconda3/Scripts:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Takumi/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Takumi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Takumi/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1e5e44996b.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/takumi/souzoukougaku14/src/install/cat_messages:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/takumi/souzoukougaku14/src/build/cat', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/takumi/souzoukougaku14/src/build/cat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages:/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'CMAKE_PREFIX_PATH': '/home/takumi/souzoukougaku14/src/install/cat_messages'}, 'shell': False}
+[5.913149] (-) TimerEvent: {}
+[5.998054] (cat) StdoutLine: {'line': b'running egg_info\n'}
+[5.998423] (cat) StdoutLine: {'line': b'creating ../build/cat/cat.egg-info\n'}
+[5.998597] (cat) StdoutLine: {'line': b'writing ../build/cat/cat.egg-info/PKG-INFO\n'}
+[5.998825] (cat) StdoutLine: {'line': b'writing dependency_links to ../build/cat/cat.egg-info/dependency_links.txt\n'}
+[5.999032] (cat) StdoutLine: {'line': b'writing entry points to ../build/cat/cat.egg-info/entry_points.txt\n'}
+[5.999077] (cat) StdoutLine: {'line': b'writing requirements to ../build/cat/cat.egg-info/requires.txt\n'}
+[5.999124] (cat) StdoutLine: {'line': b'writing top-level names to ../build/cat/cat.egg-info/top_level.txt\n'}
+[5.999285] (cat) StdoutLine: {'line': b"writing manifest file '../build/cat/cat.egg-info/SOURCES.txt'\n"}
+[6.000539] (cat) StdoutLine: {'line': b"reading manifest file '../build/cat/cat.egg-info/SOURCES.txt'\n"}
+[6.000870] (cat) StdoutLine: {'line': b"writing manifest file '../build/cat/cat.egg-info/SOURCES.txt'\n"}
+[6.001086] (cat) StdoutLine: {'line': b'running build\n'}
+[6.001171] (cat) StdoutLine: {'line': b'running build_py\n'}
+[6.001333] (cat) StdoutLine: {'line': b'creating /home/takumi/souzoukougaku14/src/build/cat/build\n'}
+[6.001562] (cat) StdoutLine: {'line': b'creating /home/takumi/souzoukougaku14/src/build/cat/build/lib\n'}
+[6.013443] (-) TimerEvent: {}
+[6.020379] (cat) StdoutLine: {'line': b'creating /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat\n'}
+[6.020860] (cat) StdoutLine: {'line': b'copying cat/tcp_receive_node.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat\n'}
+[6.020957] (cat) StdoutLine: {'line': b'copying cat/udp_receive_node.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat\n'}
+[6.028332] (cat) StdoutLine: {'line': b'copying cat/tcp_send_node.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat\n'}
+[6.038884] (cat) StdoutLine: {'line': b'copying cat/pc_controller.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat\n'}
+[6.039276] (cat) StdoutLine: {'line': b'copying cat/serial_sample.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat\n'}
+[6.039331] (cat) StdoutLine: {'line': b'copying cat/state_machine.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat\n'}
+[6.039372] (cat) StdoutLine: {'line': b'copying cat/udp_send_node.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat\n'}
+[6.047535] (cat) StdoutLine: {'line': b'copying cat/__init__.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat\n'}
+[6.047863] (cat) StdoutLine: {'line': b'running install\n'}
+[6.048205] (cat) StdoutLine: {'line': b'running install_lib\n'}
+[6.048993] (cat) StdoutLine: {'line': b'creating /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat\n'}
+[6.049193] (cat) StdoutLine: {'line': b'copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/tcp_receive_node.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat\n'}
+[6.061291] (cat) StdoutLine: {'line': b'copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/udp_receive_node.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat\n'}
+[6.061583] (cat) StdoutLine: {'line': b'copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/tcp_send_node.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat\n'}
+[6.062009] (cat) StdoutLine: {'line': b'copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/pc_controller.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat\n'}
+[6.062102] (cat) StdoutLine: {'line': b'copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/serial_sample.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat\n'}
+[6.062137] (cat) StdoutLine: {'line': b'copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/state_machine.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat\n'}
+[6.062168] (cat) StdoutLine: {'line': b'copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/udp_send_node.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat\n'}
+[6.062199] (cat) StdoutLine: {'line': b'copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/__init__.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat\n'}
+[6.070802] (cat) StdoutLine: {'line': b'byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/tcp_receive_node.py to tcp_receive_node.cpython-310.pyc\n'}
+[6.071570] (cat) StdoutLine: {'line': b'byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/udp_receive_node.py to udp_receive_node.cpython-310.pyc\n'}
+[6.081072] (cat) StdoutLine: {'line': b'byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/tcp_send_node.py to tcp_send_node.cpython-310.pyc\n'}
+[6.088848] (cat) StdoutLine: {'line': b'byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/pc_controller.py to pc_controller.cpython-310.pyc\n'}
+[6.089429] (cat) StdoutLine: {'line': b'byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/serial_sample.py to serial_sample.cpython-310.pyc\n'}
+[6.099128] (cat) StdoutLine: {'line': b'byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/state_machine.py to state_machine.cpython-310.pyc\n'}
+[6.099581] (cat) StdoutLine: {'line': b'byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/udp_send_node.py to udp_send_node.cpython-310.pyc\n'}
+[6.100106] (cat) StdoutLine: {'line': b'byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/__init__.py to __init__.cpython-310.pyc\n'}
+[6.100401] (cat) StdoutLine: {'line': b'running install_data\n'}
+[6.100479] (cat) StdoutLine: {'line': b'creating /home/takumi/souzoukougaku14/src/install/cat/share/ament_index\n'}
+[6.101005] (cat) StdoutLine: {'line': b'creating /home/takumi/souzoukougaku14/src/install/cat/share/ament_index/resource_index\n'}
+[6.101126] (cat) StdoutLine: {'line': b'creating /home/takumi/souzoukougaku14/src/install/cat/share/ament_index/resource_index/packages\n'}
+[6.101383] (cat) StdoutLine: {'line': b'copying resource/cat -> /home/takumi/souzoukougaku14/src/install/cat/share/ament_index/resource_index/packages\n'}
+[6.101580] (cat) StdoutLine: {'line': b'copying package.xml -> /home/takumi/souzoukougaku14/src/install/cat/share/cat\n'}
+[6.101785] (cat) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.103329] (cat) StdoutLine: {'line': b'Copying ../build/cat/cat.egg-info to /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat-0.0.0-py3.10.egg-info\n'}
+[6.113620] (-) TimerEvent: {}
+[6.132058] (cat) StdoutLine: {'line': b'running install_scripts\n'}
+[6.147687] (cat) StdoutLine: {'line': b'Installing pc_controller script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat\n'}
+[6.147983] (cat) StdoutLine: {'line': b'Installing state_machine script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat\n'}
+[6.160415] (cat) StdoutLine: {'line': b'Installing tcp_receive_node script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat\n'}
+[6.160693] (cat) StdoutLine: {'line': b'Installing tcp_send_node script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat\n'}
+[6.161157] (cat) StdoutLine: {'line': b"writing list of installed files to '/home/takumi/souzoukougaku14/src/build/cat/install.log'\n"}
+[6.177037] (cat) CommandEnded: {'returncode': 0}
+[6.213845] (-) TimerEvent: {}
+[6.220920] (cat) JobEnded: {'identifier': 'cat', 'rc': 0}
+[6.234102] (-) EventReactorShutdown: {}

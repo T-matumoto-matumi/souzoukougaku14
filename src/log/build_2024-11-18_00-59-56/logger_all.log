@@ -1,0 +1,216 @@
+[0.170s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.170s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7905dc2b10c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7905dc2b0d00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7905dc2b0d00>>)
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.321s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/takumi/souzoukougaku14/src'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(cat) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(cat) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(cat) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(cat) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(cat) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(cat) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(cat) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(cat) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(cat) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'cat' with type 'ros.ament_python' and name 'cat'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(cat_messages) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(cat_messages) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(cat_messages) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(cat_messages) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(cat_messages) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(cat_messages) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(cat_messages) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(cat_messages) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(cat_messages) by extension 'ros'
+[0.339s] DEBUG:colcon.colcon_core.package_identification:Package 'cat_messages' with type 'ros.ament_cmake' and name 'cat_messages'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ros'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['cmake', 'python']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'cmake'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['python_setup_py']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python_setup_py'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.367s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 404 installed packages in /opt/ros/humble
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'cat_messages' build argument 'cmake_args' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'cat_messages' build argument 'cmake_target' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'cat_messages' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'cat_messages' build argument 'cmake_clean_cache' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'cat_messages' build argument 'cmake_clean_first' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'cat_messages' build argument 'cmake_force_configure' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'cat_messages' build argument 'ament_cmake_args' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'cat_messages' build argument 'catkin_cmake_args' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'cat_messages' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.417s] DEBUG:colcon.colcon_core.verb:Building package 'cat_messages' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/takumi/souzoukougaku14/src/build/cat_messages', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/takumi/souzoukougaku14/src/install/cat_messages', 'merge_install': False, 'path': '/home/takumi/souzoukougaku14/src/cat_messages', 'symlink_install': False, 'test_result_base': None}
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'cat' build argument 'cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'cat' build argument 'cmake_target' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'cat' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'cat' build argument 'cmake_clean_cache' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'cat' build argument 'cmake_clean_first' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'cat' build argument 'cmake_force_configure' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'cat' build argument 'ament_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'cat' build argument 'catkin_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'cat' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.418s] DEBUG:colcon.colcon_core.verb:Building package 'cat' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/takumi/souzoukougaku14/src/build/cat', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/takumi/souzoukougaku14/src/install/cat', 'merge_install': False, 'path': '/home/takumi/souzoukougaku14/src/cat', 'symlink_install': False, 'test_result_base': None}
+[0.418s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.419s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.419s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/takumi/souzoukougaku14/src/cat_messages' with build type 'ament_cmake'
+[0.420s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/takumi/souzoukougaku14/src/cat_messages'
+[0.422s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.422s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.422s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takumi/souzoukougaku14/src/build/cat_messages': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/takumi/souzoukougaku14/src/cat_messages -DCMAKE_INSTALL_PREFIX=/home/takumi/souzoukougaku14/src/install/cat_messages
+[2.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takumi/souzoukougaku14/src/build/cat_messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/takumi/souzoukougaku14/src/cat_messages -DCMAKE_INSTALL_PREFIX=/home/takumi/souzoukougaku14/src/install/cat_messages
+[2.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takumi/souzoukougaku14/src/build/cat_messages': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takumi/souzoukougaku14/src/build/cat_messages -- -j8 -l8
+[5.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takumi/souzoukougaku14/src/build/cat_messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takumi/souzoukougaku14/src/build/cat_messages -- -j8 -l8
+[5.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takumi/souzoukougaku14/src/build/cat_messages': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/takumi/souzoukougaku14/src/build/cat_messages
+[5.251s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cat_messages)
+[5.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takumi/souzoukougaku14/src/build/cat_messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/takumi/souzoukougaku14/src/build/cat_messages
+[5.254s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages' for CMake module files
+[5.255s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages' for CMake config files
+[5.256s] Level 1:colcon.colcon_core.shell:create_environment_hook('cat_messages', 'cmake_prefix_path')
+[5.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/cmake_prefix_path.ps1'
+[5.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/cmake_prefix_path.dsv'
+[5.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/cmake_prefix_path.sh'
+[5.260s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/lib'
+[5.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('cat_messages', 'ld_library_path_lib')
+[5.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/ld_library_path_lib.ps1'
+[5.261s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/ld_library_path_lib.dsv'
+[5.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/ld_library_path_lib.sh'
+[5.262s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/bin'
+[5.262s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/lib/pkgconfig/cat_messages.pc'
+[5.262s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/lib/python3.10/site-packages'
+[5.262s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/bin'
+[5.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.ps1'
+[5.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.dsv'
+[5.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.sh'
+[5.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.bash'
+[5.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.zsh'
+[5.266s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takumi/souzoukougaku14/src/install/cat_messages/share/colcon-core/packages/cat_messages)
+[5.327s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cat_messages)
+[5.328s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages' for CMake module files
+[5.328s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages' for CMake config files
+[5.329s] Level 1:colcon.colcon_core.shell:create_environment_hook('cat_messages', 'cmake_prefix_path')
+[5.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/cmake_prefix_path.ps1'
+[5.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/cmake_prefix_path.dsv'
+[5.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/cmake_prefix_path.sh'
+[5.330s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/lib'
+[5.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('cat_messages', 'ld_library_path_lib')
+[5.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/ld_library_path_lib.ps1'
+[5.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/ld_library_path_lib.dsv'
+[5.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/hook/ld_library_path_lib.sh'
+[5.332s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/bin'
+[5.332s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/lib/pkgconfig/cat_messages.pc'
+[5.332s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/lib/python3.10/site-packages'
+[5.332s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat_messages/bin'
+[5.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.ps1'
+[5.333s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.dsv'
+[5.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.sh'
+[5.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.bash'
+[5.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat_messages/share/cat_messages/package.zsh'
+[5.334s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takumi/souzoukougaku14/src/install/cat_messages/share/colcon-core/packages/cat_messages)
+[5.335s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/takumi/souzoukougaku14/src/cat' with build type 'ament_python'
+[5.335s] Level 1:colcon.colcon_core.shell:create_environment_hook('cat', 'ament_prefix_path')
+[5.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat/share/cat/hook/ament_prefix_path.ps1'
+[5.337s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takumi/souzoukougaku14/src/install/cat/share/cat/hook/ament_prefix_path.dsv'
+[5.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat/share/cat/hook/ament_prefix_path.sh'
+[5.339s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.339s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.605s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/takumi/souzoukougaku14/src/cat'
+[5.605s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.606s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takumi/souzoukougaku14/src/cat': AMENT_PREFIX_PATH=/home/takumi/souzoukougaku14/src/install/cat_messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/takumi/souzoukougaku14/src/install/cat_messages LD_LIBRARY_PATH=/home/takumi/souzoukougaku14/src/install/cat_messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/takumi/souzoukougaku14/src/build/cat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages:/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/cat build --build-base /home/takumi/souzoukougaku14/src/build/cat/build install --record /home/takumi/souzoukougaku14/src/build/cat/install.log --single-version-externally-managed install_data
+[6.596s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat' for CMake module files
+[6.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takumi/souzoukougaku14/src/cat' returned '0': AMENT_PREFIX_PATH=/home/takumi/souzoukougaku14/src/install/cat_messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/takumi/souzoukougaku14/src/install/cat_messages LD_LIBRARY_PATH=/home/takumi/souzoukougaku14/src/install/cat_messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/takumi/souzoukougaku14/src/build/cat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages:/home/takumi/souzoukougaku14/src/install/cat_messages/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/cat build --build-base /home/takumi/souzoukougaku14/src/build/cat/build install --record /home/takumi/souzoukougaku14/src/build/cat/install.log --single-version-externally-managed install_data
+[6.597s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat' for CMake config files
+[6.597s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat/lib'
+[6.597s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat/bin'
+[6.597s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat/lib/pkgconfig/cat.pc'
+[6.598s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages'
+[6.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('cat', 'pythonpath')
+[6.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat/share/cat/hook/pythonpath.ps1'
+[6.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takumi/souzoukougaku14/src/install/cat/share/cat/hook/pythonpath.dsv'
+[6.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takumi/souzoukougaku14/src/install/cat/share/cat/hook/pythonpath.sh'
+[6.607s] Level 1:colcon.colcon_core.environment:checking '/home/takumi/souzoukougaku14/src/install/cat/bin'
+[6.608s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cat)
+[6.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat/share/cat/package.ps1'
+[6.608s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takumi/souzoukougaku14/src/install/cat/share/cat/package.dsv'
+[6.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat/share/cat/package.sh'
+[6.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat/share/cat/package.bash'
+[6.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/takumi/souzoukougaku14/src/install/cat/share/cat/package.zsh'
+[6.610s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takumi/souzoukougaku14/src/install/cat/share/colcon-core/packages/cat)
+[6.640s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.641s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.641s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.641s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.692s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.692s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.692s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.692s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.778s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[6.778s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.779s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/takumi/souzoukougaku14/src/install/local_setup.ps1'
+[6.790s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/takumi/souzoukougaku14/src/install/_local_setup_util_ps1.py'
+[6.793s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/takumi/souzoukougaku14/src/install/setup.ps1'
+[6.804s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/takumi/souzoukougaku14/src/install/local_setup.sh'
+[6.813s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/takumi/souzoukougaku14/src/install/_local_setup_util_sh.py'
+[6.832s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/takumi/souzoukougaku14/src/install/setup.sh'
+[6.835s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/takumi/souzoukougaku14/src/install/local_setup.bash'
+[6.846s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/takumi/souzoukougaku14/src/install/setup.bash'
+[6.847s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/takumi/souzoukougaku14/src/install/local_setup.zsh'
+[6.847s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/takumi/souzoukougaku14/src/install/setup.zsh'

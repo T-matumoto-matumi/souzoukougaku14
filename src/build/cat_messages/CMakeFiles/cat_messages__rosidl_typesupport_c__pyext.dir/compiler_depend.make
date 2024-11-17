@@ -245,8 +245,13 @@ CMakeFiles/cat_messages__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cat
   rosidl_generator_c/cat_messages/msg/detail/joy_cat__type_support.h \
   rosidl_generator_c/cat_messages/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/cat_messages/msg/detail/joy_cat__struct.h \
-  rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.h
+  rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.h \
+  rosidl_generator_c/cat_messages/msg/detail/senser__type_support.h \
+  rosidl_generator_c/cat_messages/msg/detail/senser__struct.h \
+  rosidl_generator_c/cat_messages/msg/detail/senser__functions.h
 
+
+rosidl_generator_c/cat_messages/msg/detail/senser__functions.h:
 
 rosidl_generator_c/cat_messages/msg/detail/joy_cat__struct.h:
 
@@ -329,6 +334,8 @@ rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.h:
 /usr/include/python3.10/dictobject.h:
 
 /usr/include/python3.10/cpython/listobject.h:
+
+rosidl_generator_c/cat_messages/msg/detail/senser__struct.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
@@ -431,6 +438,8 @@ rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.h:
 /usr/include/features.h:
 
 /usr/include/python3.10/pyconfig.h:
+
+rosidl_generator_c/cat_messages/msg/detail/senser__type_support.h:
 
 /usr/include/linux/errno.h:
 

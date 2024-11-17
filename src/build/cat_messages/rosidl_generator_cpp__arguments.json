@@ -1,9 +1,10 @@
 {
   "package_name": "cat_messages",
-  "output_dir": "/home/hamilton/souzou/src/build/cat_messages/rosidl_generator_cpp/cat_messages",
+  "output_dir": "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/hamilton/souzou/src/build/cat_messages/rosidl_adapter/cat_messages:msg/JoyCat.idl"
+    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages:msg/JoyCat.idl",
+    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages:msg/Senser.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -21,6 +22,7 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/hamilton/souzou/src/build/cat_messages/rosidl_adapter/cat_messages/msg/JoyCat.idl"
+    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages/msg/JoyCat.idl",
+    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages/msg/Senser.idl"
   ]
 }

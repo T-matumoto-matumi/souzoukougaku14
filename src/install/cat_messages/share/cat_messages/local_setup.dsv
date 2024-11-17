@@ -1,1 +1,4 @@
-/home/hamilton/souzou/src/build/cat_messages/ament_cmake_environment_hooks/local_setup.dsv
+source;share/cat_messages/environment/ament_prefix_path.sh
+source;share/cat_messages/environment/library_path.sh
+source;share/cat_messages/environment/path.sh
+source;share/cat_messages/environment/pythonpath.sh

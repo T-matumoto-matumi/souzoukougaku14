@@ -18,7 +18,7 @@ class UdpNode(Node):
         timer_period =0.05
         self.timer = self.create_timer(timer_period,self.timer_callback)
         self.sub = self.create_subscription(
-            Twist,"/cmd_vel",self.vel_callback,10
+            Twist,"cmd_vel",self.vel_callback,10
         )
         self.vel_x =0.0
         self.vel_w =0.0

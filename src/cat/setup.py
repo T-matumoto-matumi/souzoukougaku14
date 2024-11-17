@@ -24,6 +24,8 @@ setup(
             'state_machine = cat.state_machine:main',
             'tcp_send_node = cat.tcp_send_node:main',
             'tcp_receive_node = cat.tcp_receive_node:main',
+            'udp_send_node = cat.udp_send_node:main',
+            'udp_receive_node = cat.udp_receive_node:main',
         ],
     },
 )

@@ -1,8 +1,8 @@
-# Install script for directory: /home/hamilton/souzou/src/build/cat_messages/cat_messages__py
+# Install script for directory: /home/takumi/souzoukougaku14/src/build/cat_messages/cat_messages__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hamilton/souzou/src/install/cat_messages")
+  set(CMAKE_INSTALL_PREFIX "/home/takumi/souzoukougaku14/src/install/cat_messages")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

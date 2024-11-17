@@ -14,6 +14,8 @@ cat/serial_sample.py
 cat/state_machine.py
 cat/tcp_receive_node.py
 cat/tcp_send_node.py
+cat/udp_receive_node.py
+cat/udp_send_node.py
 resource/cat
 test/test_copyright.py
 test/test_flake8.py

@@ -1,6 +1,7 @@
 {
   "package_name": "cat_messages",
   "non_idl_tuples": [
-    "/home/hamilton/souzou/src/cat_messages:src/msg/JoyCat.msg"
+    "/home/takumi/souzoukougaku14/src/cat_messages:src/msg/JoyCat.msg",
+    "/home/takumi/souzoukougaku14/src/cat_messages:src/msg/Senser.msg"
   ]
 }

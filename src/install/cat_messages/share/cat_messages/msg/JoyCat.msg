@@ -1,1 +1,4 @@
-/home/hamilton/souzou/src/cat_messages/src/msg/JoyCat.msg
+float64 x
+float64 yaw
+bool buttun_1
+bool buttun_2
