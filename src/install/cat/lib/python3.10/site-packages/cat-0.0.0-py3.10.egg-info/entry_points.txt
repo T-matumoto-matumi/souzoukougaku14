@@ -1,4 +1,5 @@
 [console_scripts]
+odom_test_node = cat.odom_test_node:main
 pc_controller = cat.pc_controller:main
 state_machine = cat.state_machine:main
 tcp_receive_node = cat.tcp_receive_node:main

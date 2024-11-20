@@ -9,6 +9,7 @@ setup.py
 ../build/cat/cat.egg-info/top_level.txt
 ../build/cat/cat.egg-info/zip-safe
 cat/__init__.py
+cat/odom_test_node.py
 cat/pc_controller.py
 cat/serial_sample.py
 cat/state_machine.py

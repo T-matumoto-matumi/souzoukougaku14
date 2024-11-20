@@ -26,6 +26,7 @@ setup(
             'tcp_receive_node = cat.tcp_receive_node:main',
             'udp_send_node = cat.udp_send_node:main',
             'udp_receive_node = cat.udp_receive_node:main',
+            'odom_test_node = cat.odom_test_node:main',
         ],
     },
 )

@@ -1,4 +1,0 @@
-Invoking command in '/home/hamilton/souzou/src/build/cat_messages': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hamilton/souzou/src/build/cat_messages -- -j8 -l8
-Invoked command in '/home/hamilton/souzou/src/build/cat_messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hamilton/souzou/src/build/cat_messages -- -j8 -l8
-Invoking command in '/home/hamilton/souzou/src/build/cat_messages': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/hamilton/souzou/src/build/cat_messages
-Invoked command in '/home/hamilton/souzou/src/build/cat_messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/hamilton/souzou/src/build/cat_messages

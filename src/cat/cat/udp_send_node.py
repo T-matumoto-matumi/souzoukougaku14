@@ -3,6 +3,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 import socket
 import struct
+import math
 
 # ESP32サーバーのIPアドレスとポート
 IP = "192.168.4.1"  # ESP32のIPアドレス
@@ -47,6 +48,7 @@ class UdpSendNode(Node):
         self.right = self.vel_x/self.R-self.vel_w*self.L/(2*self.R)
         self.left = self.vel_x/self.R+self.vel_w*self.L/(2*self.R)
         print(f"rihgt{self.right},left{self.left}")
+        self.max = 100
         if self.left>self.right:
             self.left_send = 1*self.max
             self.right_send = self.right/self.left*self.max

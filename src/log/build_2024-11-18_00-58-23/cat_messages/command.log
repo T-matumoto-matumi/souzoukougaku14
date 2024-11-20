@@ -1,2 +1,0 @@
-Invoking command in '/home/takumi/souzoukougaku14/src/build/cat_messages': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/takumi/souzoukougaku14/src/cat_messages -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/takumi/souzoukougaku14/src/install/cat_messages
-Invoked command in '/home/takumi/souzoukougaku14/src/build/cat_messages' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/takumi/souzoukougaku14/src/cat_messages -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/takumi/souzoukougaku14/src/install/cat_messages
