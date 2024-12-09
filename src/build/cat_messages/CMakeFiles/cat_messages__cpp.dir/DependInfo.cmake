@@ -18,7 +18,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/detail/senser__builder.hpp" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp"
   "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/detail/senser__struct.hpp" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp"
   "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/detail/senser__traits.hpp" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp"
+  "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/detail/vel__builder.hpp" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp"
+  "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/detail/vel__struct.hpp" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp"
+  "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/detail/vel__traits.hpp" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp"
   "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/senser.hpp" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp"
+  "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/vel.hpp" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp"
   )
 
 

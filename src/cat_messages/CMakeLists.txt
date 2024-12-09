@@ -14,6 +14,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "src/msg/JoyCat.msg"
   "src/msg/Senser.msg"
+  "src/msg/Vel.msg"
 )
 
 if(BUILD_TESTING)

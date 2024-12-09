@@ -40,8 +40,8 @@ struct JoyCat_
     {
       this->x = 0.0;
       this->yaw = 0.0;
-      this->buttun_1 = false;
-      this->buttun_2 = false;
+      this->button_1 = false;
+      this->button_2 = false;
     }
   }
 
@@ -53,8 +53,8 @@ struct JoyCat_
     {
       this->x = 0.0;
       this->yaw = 0.0;
-      this->buttun_1 = false;
-      this->buttun_2 = false;
+      this->button_1 = false;
+      this->button_2 = false;
     }
   }
 
@@ -65,12 +65,12 @@ struct JoyCat_
   using _yaw_type =
     double;
   _yaw_type yaw;
-  using _buttun_1_type =
+  using _button_1_type =
     bool;
-  _buttun_1_type buttun_1;
-  using _buttun_2_type =
+  _button_1_type button_1;
+  using _button_2_type =
     bool;
-  _buttun_2_type buttun_2;
+  _button_2_type button_2;
 
   // setters for named parameter idiom
   Type & set__x(
@@ -85,16 +85,16 @@ struct JoyCat_
     this->yaw = _arg;
     return *this;
   }
-  Type & set__buttun_1(
+  Type & set__button_1(
     const bool & _arg)
   {
-    this->buttun_1 = _arg;
+    this->button_1 = _arg;
     return *this;
   }
-  Type & set__buttun_2(
+  Type & set__button_2(
     const bool & _arg)
   {
-    this->buttun_2 = _arg;
+    this->button_2 = _arg;
     return *this;
   }
 
@@ -146,10 +146,10 @@ struct JoyCat_
     if (this->yaw != other.yaw) {
       return false;
     }
-    if (this->buttun_1 != other.buttun_1) {
+    if (this->button_1 != other.button_1) {
       return false;
     }
-    if (this->buttun_2 != other.buttun_2) {
+    if (this->button_2 != other.button_2) {
       return false;
     }
     return true;

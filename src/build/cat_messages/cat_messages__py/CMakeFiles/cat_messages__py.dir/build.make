@@ -71,9 +71,11 @@ cat_messages__py/CMakeFiles/cat_messages__py: rosidl_generator_py/cat_messages/_
 cat_messages__py/CMakeFiles/cat_messages__py: rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_c.c
 cat_messages__py/CMakeFiles/cat_messages__py: rosidl_generator_py/cat_messages/msg/_joy_cat.py
 cat_messages__py/CMakeFiles/cat_messages__py: rosidl_generator_py/cat_messages/msg/_senser.py
+cat_messages__py/CMakeFiles/cat_messages__py: rosidl_generator_py/cat_messages/msg/_vel.py
 cat_messages__py/CMakeFiles/cat_messages__py: rosidl_generator_py/cat_messages/msg/__init__.py
 cat_messages__py/CMakeFiles/cat_messages__py: rosidl_generator_py/cat_messages/msg/_joy_cat_s.c
 cat_messages__py/CMakeFiles/cat_messages__py: rosidl_generator_py/cat_messages/msg/_senser_s.c
+cat_messages__py/CMakeFiles/cat_messages__py: rosidl_generator_py/cat_messages/msg/_vel_s.c
 
 rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -90,6 +92,7 @@ rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_
 rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cat_messages/msg/JoyCat.idl
 rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cat_messages/msg/Senser.idl
+rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cat_messages/msg/Vel.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/takumi/souzoukougaku14/src/build/cat_messages/cat_messages__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -105,6 +108,9 @@ rosidl_generator_py/cat_messages/msg/_joy_cat.py: rosidl_generator_py/cat_messag
 rosidl_generator_py/cat_messages/msg/_senser.py: rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cat_messages/msg/_senser.py
 
+rosidl_generator_py/cat_messages/msg/_vel.py: rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cat_messages/msg/_vel.py
+
 rosidl_generator_py/cat_messages/msg/__init__.py: rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cat_messages/msg/__init__.py
 
@@ -113,6 +119,9 @@ rosidl_generator_py/cat_messages/msg/_joy_cat_s.c: rosidl_generator_py/cat_messa
 
 rosidl_generator_py/cat_messages/msg/_senser_s.c: rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cat_messages/msg/_senser_s.c
+
+rosidl_generator_py/cat_messages/msg/_vel_s.c: rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/cat_messages/msg/_vel_s.c
 
 cat_messages__py: cat_messages__py/CMakeFiles/cat_messages__py
 cat_messages__py: rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_c.c
@@ -123,6 +132,8 @@ cat_messages__py: rosidl_generator_py/cat_messages/msg/_joy_cat.py
 cat_messages__py: rosidl_generator_py/cat_messages/msg/_joy_cat_s.c
 cat_messages__py: rosidl_generator_py/cat_messages/msg/_senser.py
 cat_messages__py: rosidl_generator_py/cat_messages/msg/_senser_s.c
+cat_messages__py: rosidl_generator_py/cat_messages/msg/_vel.py
+cat_messages__py: rosidl_generator_py/cat_messages/msg/_vel_s.c
 cat_messages__py: cat_messages__py/CMakeFiles/cat_messages__py.dir/build.make
 .PHONY : cat_messages__py
 

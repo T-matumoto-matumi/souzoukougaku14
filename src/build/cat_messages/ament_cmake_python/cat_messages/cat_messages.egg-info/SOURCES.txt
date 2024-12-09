@@ -7,3 +7,4 @@ cat_messages.egg-info/top_level.txt
 cat_messages/msg/__init__.py
 cat_messages/msg/_joy_cat.py
 cat_messages/msg/_senser.py
+cat_messages/msg/_vel.py

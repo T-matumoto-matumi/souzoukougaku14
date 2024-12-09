@@ -59,15 +59,15 @@ class JoyCat(metaclass=Metaclass_JoyCat):
     __slots__ = [
         '_x',
         '_yaw',
-        '_buttun_1',
-        '_buttun_2',
+        '_button_1',
+        '_button_2',
     ]
 
     _fields_and_field_types = {
         'x': 'double',
         'yaw': 'double',
-        'buttun_1': 'boolean',
-        'buttun_2': 'boolean',
+        'button_1': 'boolean',
+        'button_2': 'boolean',
     }
 
     SLOT_TYPES = (
@@ -83,8 +83,8 @@ class JoyCat(metaclass=Metaclass_JoyCat):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.x = kwargs.get('x', float())
         self.yaw = kwargs.get('yaw', float())
-        self.buttun_1 = kwargs.get('buttun_1', bool())
-        self.buttun_2 = kwargs.get('buttun_2', bool())
+        self.button_1 = kwargs.get('button_1', bool())
+        self.button_2 = kwargs.get('button_2', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -119,9 +119,9 @@ class JoyCat(metaclass=Metaclass_JoyCat):
             return False
         if self.yaw != other.yaw:
             return False
-        if self.buttun_1 != other.buttun_1:
+        if self.button_1 != other.button_1:
             return False
-        if self.buttun_2 != other.buttun_2:
+        if self.button_2 != other.button_2:
             return False
         return True
 
@@ -161,27 +161,27 @@ class JoyCat(metaclass=Metaclass_JoyCat):
         self._yaw = value
 
     @builtins.property
-    def buttun_1(self):
-        """Message field 'buttun_1'."""
-        return self._buttun_1
+    def button_1(self):
+        """Message field 'button_1'."""
+        return self._button_1
 
-    @buttun_1.setter
-    def buttun_1(self, value):
+    @button_1.setter
+    def button_1(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'buttun_1' field must be of type 'bool'"
-        self._buttun_1 = value
+                "The 'button_1' field must be of type 'bool'"
+        self._button_1 = value
 
     @builtins.property
-    def buttun_2(self):
-        """Message field 'buttun_2'."""
-        return self._buttun_2
+    def button_2(self):
+        """Message field 'button_2'."""
+        return self._button_2
 
-    @buttun_2.setter
-    def buttun_2(self, value):
+    @button_2.setter
+    def button_2(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'buttun_2' field must be of type 'bool'"
-        self._buttun_2 = value
+                "The 'button_2' field must be of type 'bool'"
+        self._button_2 = value

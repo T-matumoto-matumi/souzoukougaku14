@@ -30,7 +30,7 @@ class UdpSendNode(Node):
         self.left_send = 0.0
         self.R = 15 #半径[mm]
         self.L = 105 #機体の幅[mm]
-        self.max = 100
+        self.max = 200
         
     def send_data(self,destination_ip, destination_port, data):
         # 配列をバイナリ形式で送信
@@ -45,30 +45,32 @@ class UdpSendNode(Node):
         self.vel_w = msg.angular.z
     
     def timer_callback(self):
-        self.right = self.vel_x/self.R-self.vel_w*self.L/(2*self.R)
-        self.left = self.vel_x/self.R+self.vel_w*self.L/(2*self.R)
-        print(f"rihgt{self.right},left{self.left}")
-        self.max = 100
-        if self.left>self.right:
-            self.left_send = 1*self.max
-            self.right_send = self.right/self.left*self.max
-        elif self.left<self.right:
-            self.right_send=1*self.max
-            self.left_send = self.left/self.right*self.max
-        elif self.right==self.left and self.right!=0 and self.left!=0:
-            if self.left<0:
-                self.left_send = -1*self.max
-                self.right_send = -1*self.max
-            else:
-                self.left_send = self.max
-                self.right_send = self.max
+        #self.right = self.vel_x/self.R-self.vel_w*self.L/(2*self.R)
+        #self.left = self.vel_x/self.R+self.vel_w*self.L/(2*self.R)
+        self.right = self.vel_x-self.vel_w
+        self.left = self.vel_x+self.vel_w
+        
+        self.max = 255*math.sqrt(self.vel_x**2+self.vel_w**2)/math.sqrt(2)
+        
+        if self.left==0 or self.right==0:
+            self.left_send =0.0
+            self.right_send =0.0
+        elif abs(self.left)>abs(self.right):
+            self.left_send = 1*self.max*(self.left/abs(self.left))
+            self.right_send = self.right/self.left*self.max*(self.right/abs(self.right))
+        elif abs(self.left)<abs(self.right):
+            self.right_send=1*self.max*(self.right/abs(self.right))
+            self.left_send = self.left/self.right*self.max*(self.left/abs(self.left))
+        elif abs(self.right)==abs(self.left):
+            self.left_send = self.max*(self.left/abs(self.left))
+            self.right_send = self.max*(self.right/abs(self.right))
         else:
             self.right_send =0
             self.left_send =0
         
         data_array[0]=int(self.right_send)
         data_array[1]=int(self.left_send)
-        
+        print(f"rihgt{self.right_send},left{self.left_send}")
         self.send_data(IP,PORT,data_array)
 
         

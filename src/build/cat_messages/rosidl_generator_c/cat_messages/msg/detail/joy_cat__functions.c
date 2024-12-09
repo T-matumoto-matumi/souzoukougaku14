@@ -19,8 +19,8 @@ cat_messages__msg__JoyCat__init(cat_messages__msg__JoyCat * msg)
   }
   // x
   // yaw
-  // buttun_1
-  // buttun_2
+  // button_1
+  // button_2
   return true;
 }
 
@@ -32,8 +32,8 @@ cat_messages__msg__JoyCat__fini(cat_messages__msg__JoyCat * msg)
   }
   // x
   // yaw
-  // buttun_1
-  // buttun_2
+  // button_1
+  // button_2
 }
 
 bool
@@ -50,12 +50,12 @@ cat_messages__msg__JoyCat__are_equal(const cat_messages__msg__JoyCat * lhs, cons
   if (lhs->yaw != rhs->yaw) {
     return false;
   }
-  // buttun_1
-  if (lhs->buttun_1 != rhs->buttun_1) {
+  // button_1
+  if (lhs->button_1 != rhs->button_1) {
     return false;
   }
-  // buttun_2
-  if (lhs->buttun_2 != rhs->buttun_2) {
+  // button_2
+  if (lhs->button_2 != rhs->button_2) {
     return false;
   }
   return true;
@@ -73,10 +73,10 @@ cat_messages__msg__JoyCat__copy(
   output->x = input->x;
   // yaw
   output->yaw = input->yaw;
-  // buttun_1
-  output->buttun_1 = input->buttun_1;
-  // buttun_2
-  output->buttun_2 = input->buttun_2;
+  // button_1
+  output->button_1 = input->button_1;
+  // button_2
+  output->button_2 = input->button_2;
   return true;
 }
 

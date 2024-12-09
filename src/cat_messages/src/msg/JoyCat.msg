@@ -1,4 +1,4 @@
 float64 x
 float64 yaw
-bool buttun_1
-bool buttun_2
+bool button_1
+bool button_2

@@ -11,6 +11,8 @@ setup.py
 cat/__init__.py
 cat/odom_test_node.py
 cat/pc_controller.py
+cat/ps4_controller_node.py
+cat/ps4_joy_node.py
 cat/serial_sample.py
 cat/state_machine.py
 cat/tcp_receive_node.py

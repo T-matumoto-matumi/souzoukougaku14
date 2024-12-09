@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
     "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages:msg/JoyCat.idl",
-    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages:msg/Senser.idl"
+    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages:msg/Senser.idl",
+    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages:msg/Vel.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
@@ -16,6 +17,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
     "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages/msg/JoyCat.idl",
-    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages/msg/Senser.idl"
+    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages/msg/Senser.idl",
+    "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_adapter/cat_messages/msg/Vel.idl"
   ]
 }

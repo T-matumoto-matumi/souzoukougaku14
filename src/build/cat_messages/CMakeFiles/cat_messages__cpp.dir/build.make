@@ -74,6 +74,10 @@ CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/senser.hpp
 CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__builder.hpp
 CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__struct.hpp
 CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__traits.hpp
+CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/vel.hpp
+CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/vel__builder.hpp
+CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/vel__struct.hpp
+CMakeFiles/cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/vel__traits.hpp
 
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -92,6 +96,7 @@ rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: /opt/ros/humble/share/rosidl_
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: rosidl_adapter/cat_messages/msg/JoyCat.idl
 rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: rosidl_adapter/cat_messages/msg/Senser.idl
+rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp: rosidl_adapter/cat_messages/msg/Vel.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_cpp__arguments.json
 
@@ -116,6 +121,18 @@ rosidl_generator_cpp/cat_messages/msg/detail/senser__struct.hpp: rosidl_generato
 rosidl_generator_cpp/cat_messages/msg/detail/senser__traits.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/detail/senser__traits.hpp
 
+rosidl_generator_cpp/cat_messages/msg/vel.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/vel.hpp
+
+rosidl_generator_cpp/cat_messages/msg/detail/vel__builder.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/detail/vel__builder.hpp
+
+rosidl_generator_cpp/cat_messages/msg/detail/vel__struct.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/detail/vel__struct.hpp
+
+rosidl_generator_cpp/cat_messages/msg/detail/vel__traits.hpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cat_messages/msg/detail/vel__traits.hpp
+
 cat_messages__cpp: CMakeFiles/cat_messages__cpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__builder.hpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__struct.hpp
@@ -123,8 +140,12 @@ cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/joy_cat__traits.
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__builder.hpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__struct.hpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/senser__traits.hpp
+cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/vel__builder.hpp
+cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/vel__struct.hpp
+cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/detail/vel__traits.hpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/joy_cat.hpp
 cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/senser.hpp
+cat_messages__cpp: rosidl_generator_cpp/cat_messages/msg/vel.hpp
 cat_messages__cpp: CMakeFiles/cat_messages__cpp.dir/build.make
 .PHONY : cat_messages__cpp
 

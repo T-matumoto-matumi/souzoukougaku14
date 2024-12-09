@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/takumi/souzoukougaku14/src/build/cat_messages/ament_cmake_python/cat_messages/setup.py", line 1, in <module>
+    from setuptools import find_packages
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 18, in <module>
+    from setuptools.dist import Distribution
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 37, in <module>
+    from setuptools import windows_support
+  File "/usr/lib/python3/dist-packages/setuptools/windows_support.py", line 2, in <module>
+    import ctypes
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 512, in <module>
+    _string_at = PYFUNCTYPE(py_object, c_void_p, c_int)(_string_at_addr)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 502, in PYFUNCTYPE
+    class CFunctionType(_CFuncPtr):
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 502, in CFunctionType
+    class CFunctionType(_CFuncPtr):
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_cat_messages_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_cat_messages_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_cat_messages_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

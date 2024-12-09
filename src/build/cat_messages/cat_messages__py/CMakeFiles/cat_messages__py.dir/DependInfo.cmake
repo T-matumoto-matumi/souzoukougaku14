@@ -19,6 +19,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/msg/_joy_cat_s.c" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/msg/_senser.py" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/msg/_senser_s.c" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/msg/_vel.py" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/msg/_vel_s.c" "/home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_generator_py/cat_messages/_cat_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

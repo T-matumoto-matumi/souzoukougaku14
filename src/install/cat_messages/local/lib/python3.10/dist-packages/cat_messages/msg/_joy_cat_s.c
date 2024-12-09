@@ -68,22 +68,22 @@ bool cat_messages__msg__joy_cat__convert_from_py(PyObject * _pymsg, void * _ros_
     ros_message->yaw = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // buttun_1
-    PyObject * field = PyObject_GetAttrString(_pymsg, "buttun_1");
+  {  // button_1
+    PyObject * field = PyObject_GetAttrString(_pymsg, "button_1");
     if (!field) {
       return false;
     }
     assert(PyBool_Check(field));
-    ros_message->buttun_1 = (Py_True == field);
+    ros_message->button_1 = (Py_True == field);
     Py_DECREF(field);
   }
-  {  // buttun_2
-    PyObject * field = PyObject_GetAttrString(_pymsg, "buttun_2");
+  {  // button_2
+    PyObject * field = PyObject_GetAttrString(_pymsg, "button_2");
     if (!field) {
       return false;
     }
     assert(PyBool_Check(field));
-    ros_message->buttun_2 = (Py_True == field);
+    ros_message->button_2 = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -130,22 +130,22 @@ PyObject * cat_messages__msg__joy_cat__convert_to_py(void * raw_ros_message)
       }
     }
   }
-  {  // buttun_1
+  {  // button_1
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->buttun_1 ? 1 : 0);
+    field = PyBool_FromLong(ros_message->button_1 ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "buttun_1", field);
+      int rc = PyObject_SetAttrString(_pymessage, "button_1", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // buttun_2
+  {  // button_2
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->buttun_2 ? 1 : 0);
+    field = PyBool_FromLong(ros_message->button_2 ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "buttun_2", field);
+      int rc = PyObject_SetAttrString(_pymessage, "button_2", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

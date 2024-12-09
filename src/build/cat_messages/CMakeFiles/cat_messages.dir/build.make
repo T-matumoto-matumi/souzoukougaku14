@@ -68,6 +68,7 @@ include CMakeFiles/cat_messages.dir/progress.make
 
 CMakeFiles/cat_messages: /home/takumi/souzoukougaku14/src/cat_messages/src/msg/JoyCat.msg
 CMakeFiles/cat_messages: /home/takumi/souzoukougaku14/src/cat_messages/src/msg/Senser.msg
+CMakeFiles/cat_messages: /home/takumi/souzoukougaku14/src/cat_messages/src/msg/Vel.msg
 
 cat_messages: CMakeFiles/cat_messages
 cat_messages: CMakeFiles/cat_messages.dir/build.make

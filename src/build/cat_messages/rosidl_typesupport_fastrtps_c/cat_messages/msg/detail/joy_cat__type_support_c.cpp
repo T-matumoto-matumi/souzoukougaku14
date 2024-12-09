@@ -59,14 +59,14 @@ static bool _JoyCat__cdr_serialize(
     cdr << ros_message->yaw;
   }
 
-  // Field name: buttun_1
+  // Field name: button_1
   {
-    cdr << (ros_message->buttun_1 ? true : false);
+    cdr << (ros_message->button_1 ? true : false);
   }
 
-  // Field name: buttun_2
+  // Field name: button_2
   {
-    cdr << (ros_message->buttun_2 ? true : false);
+    cdr << (ros_message->button_2 ? true : false);
   }
 
   return true;
@@ -91,18 +91,18 @@ static bool _JoyCat__cdr_deserialize(
     cdr >> ros_message->yaw;
   }
 
-  // Field name: buttun_1
+  // Field name: button_1
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message->buttun_1 = tmp ? true : false;
+    ros_message->button_1 = tmp ? true : false;
   }
 
-  // Field name: buttun_2
+  // Field name: button_2
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message->buttun_2 = tmp ? true : false;
+    ros_message->button_2 = tmp ? true : false;
   }
 
   return true;
@@ -134,15 +134,15 @@ size_t get_serialized_size_cat_messages__msg__JoyCat(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name buttun_1
+  // field.name button_1
   {
-    size_t item_size = sizeof(ros_message->buttun_1);
+    size_t item_size = sizeof(ros_message->button_1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name buttun_2
+  // field.name button_2
   {
-    size_t item_size = sizeof(ros_message->buttun_2);
+    size_t item_size = sizeof(ros_message->button_2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -191,14 +191,14 @@ size_t max_serialized_size_cat_messages__msg__JoyCat(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: buttun_1
+  // member: button_1
   {
     size_t array_size = 1;
 
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: buttun_2
+  // member: button_2
   {
     size_t array_size = 1;
 
@@ -214,7 +214,7 @@ size_t max_serialized_size_cat_messages__msg__JoyCat(
     using DataType = cat_messages__msg__JoyCat;
     is_plain =
       (
-      offsetof(DataType, buttun_2) +
+      offsetof(DataType, button_2) +
       last_member_size
       ) == ret_val;
   }

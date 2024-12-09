@@ -27,6 +27,8 @@ setup(
             'udp_send_node = cat.udp_send_node:main',
             'udp_receive_node = cat.udp_receive_node:main',
             'odom_test_node = cat.odom_test_node:main',
+            'ps4_joy_node = cat.ps4_joy_node:main',
+            'ps4_controller_node = cat.ps4_controller_node:main',
         ],
     },
 )

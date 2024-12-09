@@ -36,10 +36,10 @@ cdr_serialize(
   cdr << ros_message.x;
   // Member: yaw
   cdr << ros_message.yaw;
-  // Member: buttun_1
-  cdr << (ros_message.buttun_1 ? true : false);
-  // Member: buttun_2
-  cdr << (ros_message.buttun_2 ? true : false);
+  // Member: button_1
+  cdr << (ros_message.button_1 ? true : false);
+  // Member: button_2
+  cdr << (ros_message.button_2 ? true : false);
   return true;
 }
 
@@ -55,18 +55,18 @@ cdr_deserialize(
   // Member: yaw
   cdr >> ros_message.yaw;
 
-  // Member: buttun_1
+  // Member: button_1
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.buttun_1 = tmp ? true : false;
+    ros_message.button_1 = tmp ? true : false;
   }
 
-  // Member: buttun_2
+  // Member: button_2
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.buttun_2 = tmp ? true : false;
+    ros_message.button_2 = tmp ? true : false;
   }
 
   return true;
@@ -97,15 +97,15 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: buttun_1
+  // Member: button_1
   {
-    size_t item_size = sizeof(ros_message.buttun_1);
+    size_t item_size = sizeof(ros_message.button_1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: buttun_2
+  // Member: button_2
   {
-    size_t item_size = sizeof(ros_message.buttun_2);
+    size_t item_size = sizeof(ros_message.button_2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -151,7 +151,7 @@ max_serialized_size_JoyCat(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: buttun_1
+  // Member: button_1
   {
     size_t array_size = 1;
 
@@ -159,7 +159,7 @@ max_serialized_size_JoyCat(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
-  // Member: buttun_2
+  // Member: button_2
   {
     size_t array_size = 1;
 
@@ -175,7 +175,7 @@ max_serialized_size_JoyCat(
     using DataType = cat_messages::msg::JoyCat;
     is_plain =
       (
-      offsetof(DataType, buttun_2) +
+      offsetof(DataType, button_2) +
       last_member_size
       ) == ret_val;
   }

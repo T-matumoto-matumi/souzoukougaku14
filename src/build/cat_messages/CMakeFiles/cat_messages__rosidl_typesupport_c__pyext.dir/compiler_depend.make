@@ -248,8 +248,13 @@ CMakeFiles/cat_messages__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cat
   rosidl_generator_c/cat_messages/msg/detail/joy_cat__functions.h \
   rosidl_generator_c/cat_messages/msg/detail/senser__type_support.h \
   rosidl_generator_c/cat_messages/msg/detail/senser__struct.h \
-  rosidl_generator_c/cat_messages/msg/detail/senser__functions.h
+  rosidl_generator_c/cat_messages/msg/detail/senser__functions.h \
+  rosidl_generator_c/cat_messages/msg/detail/vel__type_support.h \
+  rosidl_generator_c/cat_messages/msg/detail/vel__struct.h \
+  rosidl_generator_c/cat_messages/msg/detail/vel__functions.h
 
+
+rosidl_generator_c/cat_messages/msg/detail/vel__functions.h:
 
 rosidl_generator_c/cat_messages/msg/detail/senser__functions.h:
 
@@ -503,6 +508,8 @@ rosidl_generator_c/cat_messages/msg/detail/senser__type_support.h:
 
 /usr/include/python3.10/pymacconfig.h:
 
+rosidl_generator_c/cat_messages/msg/detail/vel__struct.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
@@ -512,6 +519,8 @@ rosidl_generator_c/cat_messages/msg/detail/senser__type_support.h:
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+rosidl_generator_c/cat_messages/msg/detail/vel__type_support.h:
 
 /usr/include/python3.10/tupleobject.h:
 

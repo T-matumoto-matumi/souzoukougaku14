@@ -10,9 +10,9 @@ module cat_messages {
 
       double yaw;
 
-      boolean buttun_1;
+      boolean button_1;
 
-      boolean buttun_2;
+      boolean button_2;
     };
   };
 };

@@ -13,8 +13,8 @@ print("Waiting for data...")
 
 while True:
     # Arduinoからデータを受信
-    data, addr = sock.recvfrom(20)  # 1024バイトまでのデータを受信
-    int_array = struct.unpack('5i', data)  # int型配列をアンパック（5つの整数を仮定）
+    data, addr = sock.recvfrom(60)  # 1024バイトまでのデータを受信
+    int_array = struct.unpack('15i', data)  # int型配列をアンパック（5つの整数を仮定）
 
     print(f"Received array from Arduino: {int_array}")
 

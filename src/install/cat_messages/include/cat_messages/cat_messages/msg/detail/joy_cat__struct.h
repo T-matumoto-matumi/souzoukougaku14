@@ -22,8 +22,8 @@ typedef struct cat_messages__msg__JoyCat
 {
   double x;
   double yaw;
-  bool buttun_1;
-  bool buttun_2;
+  bool button_1;
+  bool button_2;
 } cat_messages__msg__JoyCat;
 
 // Struct for a sequence of cat_messages__msg__JoyCat.

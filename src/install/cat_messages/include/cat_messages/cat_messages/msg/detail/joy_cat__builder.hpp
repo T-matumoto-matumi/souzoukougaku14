@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_JoyCat_buttun_2
+class Init_JoyCat_button_2
 {
 public:
-  explicit Init_JoyCat_buttun_2(::cat_messages::msg::JoyCat & msg)
+  explicit Init_JoyCat_button_2(::cat_messages::msg::JoyCat & msg)
   : msg_(msg)
   {}
-  ::cat_messages::msg::JoyCat buttun_2(::cat_messages::msg::JoyCat::_buttun_2_type arg)
+  ::cat_messages::msg::JoyCat button_2(::cat_messages::msg::JoyCat::_button_2_type arg)
   {
-    msg_.buttun_2 = std::move(arg);
+    msg_.button_2 = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,16 +37,16 @@ private:
   ::cat_messages::msg::JoyCat msg_;
 };
 
-class Init_JoyCat_buttun_1
+class Init_JoyCat_button_1
 {
 public:
-  explicit Init_JoyCat_buttun_1(::cat_messages::msg::JoyCat & msg)
+  explicit Init_JoyCat_button_1(::cat_messages::msg::JoyCat & msg)
   : msg_(msg)
   {}
-  Init_JoyCat_buttun_2 buttun_1(::cat_messages::msg::JoyCat::_buttun_1_type arg)
+  Init_JoyCat_button_2 button_1(::cat_messages::msg::JoyCat::_button_1_type arg)
   {
-    msg_.buttun_1 = std::move(arg);
-    return Init_JoyCat_buttun_2(msg_);
+    msg_.button_1 = std::move(arg);
+    return Init_JoyCat_button_2(msg_);
   }
 
 private:
@@ -59,10 +59,10 @@ public:
   explicit Init_JoyCat_yaw(::cat_messages::msg::JoyCat & msg)
   : msg_(msg)
   {}
-  Init_JoyCat_buttun_1 yaw(::cat_messages::msg::JoyCat::_yaw_type arg)
+  Init_JoyCat_button_1 yaw(::cat_messages::msg::JoyCat::_yaw_type arg)
   {
     msg_.yaw = std::move(arg);
-    return Init_JoyCat_buttun_1(msg_);
+    return Init_JoyCat_button_1(msg_);
   }
 
 private:

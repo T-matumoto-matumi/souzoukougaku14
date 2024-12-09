@@ -73,14 +73,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember JoyCat_messag
     nullptr  // resize(index) function pointer
   },
   {
-    "buttun_1",  // name
+    "button_1",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cat_messages::msg::JoyCat, buttun_1),  // bytes offset in struct
+    offsetof(cat_messages::msg::JoyCat, button_1),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -90,14 +90,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember JoyCat_messag
     nullptr  // resize(index) function pointer
   },
   {
-    "buttun_2",  // name
+    "button_2",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cat_messages::msg::JoyCat, buttun_2),  // bytes offset in struct
+    offsetof(cat_messages::msg::JoyCat, button_2),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

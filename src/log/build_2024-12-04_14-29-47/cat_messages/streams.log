@@ -1,0 +1,36 @@
+[0.024s] Invoking command in '/home/takumi/souzoukougaku14/src/build/cat_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/takumi/souzoukougaku14/src/install/cat:/opt/ros/humble /usr/bin/cmake --build /home/takumi/souzoukougaku14/src/build/cat_messages -- -j8 -l8
+[0.110s] [  2%] Built target cat_messages__cpp
+[0.114s] [ 12%] Built target cat_messages__rosidl_generator_c
+[0.127s] [ 12%] Built target ament_cmake_python_copy_cat_messages
+[0.161s] [ 23%] Built target cat_messages__rosidl_typesupport_cpp
+[0.162s] [ 34%] Built target cat_messages__rosidl_typesupport_fastrtps_c
+[0.162s] [ 44%] Built target cat_messages__rosidl_typesupport_c
+[0.163s] [ 55%] Built target cat_messages__rosidl_typesupport_introspection_cpp
+[0.167s] [ 65%] Built target cat_messages__rosidl_typesupport_fastrtps_cpp
+[0.169s] [ 76%] Built target cat_messages__rosidl_typesupport_introspection_c
+[0.203s] [ 76%] Built target cat_messages
+[0.257s] [ 78%] Built target cat_messages__py
+[0.370s] [ 87%] Built target cat_messages__rosidl_generator_py
+[0.433s] [ 91%] Built target cat_messages__rosidl_typesupport_fastrtps_c__pyext
+[0.463s] [ 95%] Built target cat_messages__rosidl_typesupport_introspection_c__pyext
+[0.463s] [100%] Built target cat_messages__rosidl_typesupport_c__pyext
+[0.685s] Traceback (most recent call last):
+[0.686s]   File "/home/takumi/souzoukougaku14/src/build/cat_messages/ament_cmake_python/cat_messages/setup.py", line 1, in <module>
+[0.686s]     from setuptools import find_packages
+[0.686s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 18, in <module>
+[0.686s]     from setuptools.dist import Distribution
+[0.686s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 37, in <module>
+[0.687s]     from setuptools import windows_support
+[0.687s]   File "/usr/lib/python3/dist-packages/setuptools/windows_support.py", line 2, in <module>
+[0.687s]     import ctypes
+[0.688s]   File "/usr/lib/python3.10/ctypes/__init__.py", line 512, in <module>
+[0.688s]     _string_at = PYFUNCTYPE(py_object, c_void_p, c_int)(_string_at_addr)
+[0.689s]   File "/usr/lib/python3.10/ctypes/__init__.py", line 502, in PYFUNCTYPE
+[0.689s]     class CFunctionType(_CFuncPtr):
+[0.689s]   File "/usr/lib/python3.10/ctypes/__init__.py", line 502, in CFunctionType
+[0.689s]     class CFunctionType(_CFuncPtr):
+[0.689s] KeyboardInterrupt
+[0.720s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_cat_messages_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_cat_messages_egg] Interrupt
+[0.721s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_cat_messages_egg.dir/all] Interrupt
+[0.721s] gmake: *** [Makefile:146: all] Interrupt
+[0.724s] Invoked command in '/home/takumi/souzoukougaku14/src/build/cat_messages' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/takumi/souzoukougaku14/src/install/cat:/opt/ros/humble /usr/bin/cmake --build /home/takumi/souzoukougaku14/src/build/cat_messages -- -j8 -l8

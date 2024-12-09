@@ -79,17 +79,24 @@ rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_types
 rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h: rosidl_adapter/cat_messages/msg/JoyCat.idl
 rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h: rosidl_adapter/cat_messages/msg/Senser.idl
+rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h: rosidl_adapter/cat_messages/msg/Vel.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_typesupport_introspection_c__arguments.json
 
 rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__type_support.c: rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__type_support.c
 
 rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__type_support.c: rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__type_support.c
+
+rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c: rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c
 
 CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__type_support.c.o: CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__type_support.c.o: rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__type_support.c
@@ -119,23 +126,39 @@ CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesuppo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__type_support.c -o CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__type_support.c.s
 
+CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.o: CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.o: rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c
+CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.o: CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.o -MF CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.o.d -o CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.o -c /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c
+
+CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c > CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.i
+
+CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/takumi/souzoukougaku14/src/build/cat_messages/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c -o CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.s
+
 # Object files for target cat_messages__rosidl_typesupport_introspection_c
 cat_messages__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__type_support.c.o" \
-"CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__type_support.c.o"
+"CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__type_support.c.o" \
+"CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.o"
 
 # External object files for target cat_messages__rosidl_typesupport_introspection_c
 cat_messages__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libcat_messages__rosidl_typesupport_introspection_c.so: CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__type_support.c.o
 libcat_messages__rosidl_typesupport_introspection_c.so: CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__type_support.c.o
+libcat_messages__rosidl_typesupport_introspection_c.so: CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c.o
 libcat_messages__rosidl_typesupport_introspection_c.so: CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/build.make
 libcat_messages__rosidl_typesupport_introspection_c.so: libcat_messages__rosidl_generator_c.so
 libcat_messages__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 libcat_messages__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcat_messages__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libcat_messages__rosidl_typesupport_introspection_c.so: CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libcat_messages__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libcat_messages__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -150,6 +173,8 @@ CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/depend: rosidl_t
 CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cat_messages/msg/detail/joy_cat__type_support.c
 CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__rosidl_typesupport_introspection_c.h
 CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cat_messages/msg/detail/senser__type_support.c
+CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__rosidl_typesupport_introspection_c.h
+CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/cat_messages/msg/detail/vel__type_support.c
 	cd /home/takumi/souzoukougaku14/src/build/cat_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/takumi/souzoukougaku14/src/cat_messages /home/takumi/souzoukougaku14/src/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages /home/takumi/souzoukougaku14/src/build/cat_messages/CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cat_messages__rosidl_typesupport_introspection_c.dir/depend
 

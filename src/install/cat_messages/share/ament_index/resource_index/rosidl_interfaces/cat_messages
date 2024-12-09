@@ -2,3 +2,5 @@ msg/JoyCat.idl
 msg/JoyCat.msg
 msg/Senser.idl
 msg/Senser.msg
+msg/Vel.idl
+msg/Vel.msg
