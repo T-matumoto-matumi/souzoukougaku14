@@ -24,8 +24,8 @@ class PlotCanvas(FigureCanvas):
         
         #path 1to2
         self.path_1to2_t = np.array([0,1,2,3])
-        self.path_1to2_x = np.array([0,100,100,0])
-        self.path_1to2_y = np.array([0,0,100,100])
+        self.path_1to2_x = np.array([0,1000,1000,0])
+        self.path_1to2_y = np.array([0,0,1000,1000])
         self.f_CS_y_path_1to2 = interp1d(self.path_1to2_t, self.path_1to2_y, kind='linear')
         self.f_CS_x_path_1to2 = interp1d(self.path_1to2_t, self.path_1to2_x, kind='linear')
         self.xnew_path_1to2 =np.linspace(0, 3, num=10)
@@ -59,9 +59,9 @@ class PlotCanvas(FigureCanvas):
         self.axes.plot(cx, cy,'o')
 
         # 矢印を描画
-        self.axes.quiver(x, y, u, v, angles='xy', scale_units='xy', scale=0.1, color='blue')
-        self.axes.set_xlim(-200,200)
-        self.axes.set_ylim(-200,200)
+        self.axes.quiver(x, y, u, v, angles='xy', scale_units='xy', scale=0.01, color='blue')
+        self.axes.set_xlim(-20,1200)
+        self.axes.set_ylim(-20,1200)
         self.axes.set_title("Arrows at Specified Points")
 
         self.draw()

@@ -15,7 +15,7 @@ class OdomTestNode(Node):
         )
         self.vel_x=0
         self.arg = 0
-        self.timer_period =0.01
+        self.timer_period =0.1
         self.R = 10
         self.L = 80
         self.pose = [0.0,0.0,0.0]
@@ -27,9 +27,9 @@ class OdomTestNode(Node):
         self.arg = msg.angular.z
         
     def timer_callback(self):
-        self.pose[0]+=self.vel_x*math.cos(self.pose[2])*self.timer_period
-        self.pose[1]+=self.vel_x*math.sin(self.pose[2])*self.timer_period
-        self.pose[2]+=self.arg*self.timer_period
+        self.pose[0]+=self.vel_x*math.cos(self.pose[2])*self.timer_period*10
+        self.pose[1]+=self.vel_x*math.sin(self.pose[2])*self.timer_period*10
+        self.pose[2]+=self.arg*self.timer_period*10
         msg = Pose()
         msg.position.x = self.pose[0]
         msg.position.y = self.pose[1]

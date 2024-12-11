@@ -17,6 +17,8 @@ class MachineState(Enum):
     path_2to3 = 3
     stop = 4
     test = 5
+    go_straight = 6
+    go_arg = 7
 
 
 
@@ -26,9 +28,9 @@ class StateMachine(Node):
         self.joy_sub = self.create_subscription(
             JoyCat,"joy_cat",self.joy_callback,10
         )
-        timer_period =0.01
+        timer_period =0.1
         self.timer = self.create_timer(timer_period,self.timer_callback)
-        self.robot_state = MachineState.auto_mode #defult mamual mode
+        self.robot_state = MachineState.go_arg #defult mamual mode
         self.minigool = [0.0,0.0]
         
         self.joy_msg = JoyCat()
@@ -45,8 +47,8 @@ class StateMachine(Node):
         
         #path 1to2
         self.path_1to2_t = np.array([0,1,2,3])
-        self.path_1to2_x = np.array([0,250,500,1000])
-        self.path_1to2_y = np.array([0,0,0,0])
+        self.path_1to2_x = np.array([0,1000,1000,0])
+        self.path_1to2_y = np.array([0,0,1000,1000])
         self.f_CS_y_path_1to2 = interp1d(self.path_1to2_t, self.path_1to2_y, kind='linear')
         self.f_CS_x_path_1to2 = interp1d(self.path_1to2_t, self.path_1to2_x, kind='linear')
         self.xnew_path_1to2 =np.linspace(0, 3, num=10)
@@ -66,7 +68,7 @@ class StateMachine(Node):
     def pose_callback(self,msg):
         self.pose[0] = msg.position.x
         self.pose[1] = msg.position.y
-        self.pose[2] = msg.orientation.z
+        self.pose[2] = self.PItoPI(msg.orientation.z)
     
         
     def joy_callback(self,msg):
@@ -98,12 +100,34 @@ class StateMachine(Node):
                 print(delta_bf)
             else:
                 self.pub_vel(0.0,0.0)
+        elif self.robot_state == MachineState.go_straight:
+            self.go_straight()
+        elif self.robot_state == MachineState.go_arg:
+            self.go_arg()
+            
+    def go_arg(self):
+        aim = pi/2
+        print(self.pose[2])
+        if pi/2-self.pose[2]>=0:
+            self.pub_vel(0.0,0.5)
+        else:
+            print("gool")
+            self.pub_vel(0.0,0.0)
+            
+    def go_straight(self):
+        aim_x = 1000
+        print(self.pose[0])
+        if self.pose[0]<=aim_x:
+            self.pub_vel(0.6,0.0)
+        else:
+            print("gool")
+            self.pub_vel(0.0,0.0)
                 
                     
         
     def move_from1to2(self):
         #回転のゲイン後できれいに書き直す
-        k_p = 0.400
+        k_p = 1.000
         
         if self.index_path_1to2<self.last_index_path_1to2:
             self.minigool = self.aim_point(
@@ -116,18 +140,22 @@ class StateMachine(Node):
             
             fai = math.atan2(self.minigool[1]-self.pose[1],self.minigool[0]-self.pose[0])
             delta = fai - self.pose[2]
-            delta_bf = math.atan2(math.sin(delta),math.cos(delta))
-            # if delta_bf >= pi/4:
-            #     self.pub_vel(0.0,k_p*delta_bf/pi)
-            # elif delta_bf <= -pi/4:
-            #     self.pub_vel(0.0,k_p*delta_bf/pi)
-            # else:
-            #     self.pub_vel(0.5,0.0)
-            self.pub_vel(0.5,2*0.5*math.sin(delta_bf))
-            #print(self.index_path_1to2)
-            print(delta_bf)
+            if delta <= -1*pi:
+                delta = delta+2*pi
+            elif delta >= pi:
+                delta = delta-2*pi
             
-            if math.fabs(self.pose[0]-self.f_CS_x_path_1to2(self.xnew_path_1to2)[self.index_path_1to2+1])<20 and math.fabs(self.pose[1]-self.f_CS_y_path_1to2(self.xnew_path_1to2)[self.index_path_1to2+1])<20:
+            if delta>= pi/4:
+                self.pub_vel(0.0,k_p*delta/pi)
+                print(f"turn right:{delta}")
+            elif delta <= -pi/4:
+                self.pub_vel(0.0,k_p*delta/pi)
+                print(f"turn left:{delta}")
+            else:
+                self.pub_vel(0.5,0.0)
+            #print(self.index_path_1to2)
+            
+            if math.fabs(self.pose[0]-self.f_CS_x_path_1to2(self.xnew_path_1to2)[self.index_path_1to2+1])<50 and math.fabs(self.pose[1]-self.f_CS_y_path_1to2(self.xnew_path_1to2)[self.index_path_1to2+1])<50:
                 self.index_path_1to2+=1
         
         elif self.index_path_1to2 == self.last_index_path_1to2:
@@ -148,17 +176,20 @@ class StateMachine(Node):
                 )
             
             fai = math.atan2(self.minigool[1]-self.pose[1],self.minigool[0]-self.pose[0])
-            delta = fai - self.pose[2] + pi
-            delta_bf = math.atan2(math.sin(delta),math.cos(delta))
-            if delta_bf >= pi/8:
-                self.pub_vel(-2.0,k_p*delta_bf)
-            elif delta_bf <= -pi/8:
-                self.pub_vel(-2.0,k_p*delta_bf)
-            else:
-                self.pub_vel(-5.0,0.0)
+            delta = fai - self.pose[2]
+            if delta <= -pi:
+                delta += 2*pi
+            elif delta >= pi:
+                delta-= 2*pi
+            
+            print(delta)
+            l = self.dis_comp(self.minigool[0],self.minigool[1],self.pose[0],self.pose[1])
+            v_r = 0.5
+            omega = 2*v_r*math.sin(delta)/l
+            self.pub_vel(0.7,omega)
             print(self.index_path_1to2)
             
-            if math.fabs(self.pose[0]-self.f_CS_x_path_2to3(self.xnew_path_2to3)[self.index_path_2to3+1])<10 and math.fabs(self.pose[1]-self.f_CS_y_path_2to3(self.xnew_path_2to3)[self.index_path_2to3+1])<10:
+            if math.fabs(self.pose[0]-self.f_CS_x_path_2to3(self.xnew_path_2to3)[self.index_path_2to3+1])<50 and math.fabs(self.pose[1]-self.f_CS_y_path_2to3(self.xnew_path_2to3)[self.index_path_2to3+1])<50:
                 self.index_path_2to3+=1
         
         elif self.index_path_2to3 == self.last_index_path_2to3:

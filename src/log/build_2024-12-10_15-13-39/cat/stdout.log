@@ -1,0 +1,33 @@
+running egg_info
+writing ../build/cat/cat.egg-info/PKG-INFO
+writing dependency_links to ../build/cat/cat.egg-info/dependency_links.txt
+writing entry points to ../build/cat/cat.egg-info/entry_points.txt
+writing requirements to ../build/cat/cat.egg-info/requires.txt
+writing top-level names to ../build/cat/cat.egg-info/top_level.txt
+reading manifest file '../build/cat/cat.egg-info/SOURCES.txt'
+writing manifest file '../build/cat/cat.egg-info/SOURCES.txt'
+running build
+running build_py
+copying cat/state_machine.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat
+copying cat/udp_send_node.py -> /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat
+running install
+running install_lib
+copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/state_machine.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat
+copying /home/takumi/souzoukougaku14/src/build/cat/build/lib/cat/udp_send_node.py -> /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat
+byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/state_machine.py to state_machine.cpython-310.pyc
+byte-compiling /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat/udp_send_node.py to udp_send_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/cat/cat.egg-info to /home/takumi/souzoukougaku14/src/install/cat/lib/python3.10/site-packages/cat-0.0.0-py3.10.egg-info
+running install_scripts
+Installing odom_test_node script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat
+Installing pc_controller script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat
+Installing ps4_controller_node script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat
+Installing ps4_joy_node script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat
+Installing state_machine script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat
+Installing tcp_receive_node script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat
+Installing tcp_send_node script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat
+Installing udp_receive_node script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat
+Installing udp_send_node script to /home/takumi/souzoukougaku14/src/install/cat/lib/cat
+writing list of installed files to '/home/takumi/souzoukougaku14/src/build/cat/install.log'
