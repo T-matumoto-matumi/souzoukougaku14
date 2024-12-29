@@ -1,1 +1,0 @@
-/home/hamilton/souzou/build/cat_messages/ament_cmake_python/cat_messages/cat_messages.egg-info/top_level.txt

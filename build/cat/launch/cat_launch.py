@@ -1,1 +1,0 @@
-/home/hamilton/souzou/souzoukougaku14/src/cat/launch/cat_launch.py

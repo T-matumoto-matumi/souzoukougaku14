@@ -1,4 +1,0 @@
-Invoking command in '/home/hamilton/souzou/build/cat_messages': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/hamilton/souzou/build/cat_messages -- -j12 -l12
-Invoked command in '/home/hamilton/souzou/build/cat_messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/hamilton/souzou/build/cat_messages -- -j12 -l12
-Invoking command in '/home/hamilton/souzou/build/cat_messages': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/hamilton/souzou/build/cat_messages
-Invoked command in '/home/hamilton/souzou/build/cat_messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/hamilton/souzou/build/cat_messages

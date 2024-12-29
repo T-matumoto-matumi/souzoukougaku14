@@ -1,1 +1,0 @@
-/home/hamilton/souzou/build/cat_messages/ament_cmake_environment_hooks/local_setup.bash

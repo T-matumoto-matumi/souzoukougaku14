@@ -1,1 +1,0 @@
-/home/hamilton/souzou/build/cat_messages/rosidl_typesupport_fastrtps_cpp/cat_messages/msg/detail/senser__rosidl_typesupport_fastrtps_cpp.hpp

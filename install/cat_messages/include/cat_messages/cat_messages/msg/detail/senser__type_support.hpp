@@ -1,1 +1,0 @@
-/home/hamilton/souzou/build/cat_messages/rosidl_generator_cpp/cat_messages/msg/detail/senser__type_support.hpp
