@@ -1,0 +1,1 @@
+/home/hamilton/souzou/build/ros2_aruco/launch/aruco_recognition.launch.py

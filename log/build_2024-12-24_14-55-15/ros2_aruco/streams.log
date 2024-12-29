@@ -1,0 +1,51 @@
+[1.183s] Invoking command in '/home/hamilton/souzou/build/ros2_aruco': PYTHONPATH=/home/hamilton/souzou/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/hamilton/souzou/build/ros2_aruco/build
+[1.312s] /home/hamilton/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.312s]   warnings.warn(msg)
+[1.464s] running develop
+[1.705s] Removing /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2-aruco.egg-link (link to .)
+[1.735s] Invoked command in '/home/hamilton/souzou/build/ros2_aruco' returned '0': PYTHONPATH=/home/hamilton/souzou/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/hamilton/souzou/build/ros2_aruco/build
+[1.736s] Invoking command in '/home/hamilton/souzou/ros2_aruco/ros2_aruco': PYTHONPATH=/home/hamilton/souzou/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_aruco build --build-base /home/hamilton/souzou/build/ros2_aruco/build install --record /home/hamilton/souzou/build/ros2_aruco/install.log --single-version-externally-managed install_data --force
+[1.861s] /home/hamilton/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.861s]   warnings.warn(msg)
+[1.957s] running egg_info
+[1.972s] writing ../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO
+[1.973s] writing dependency_links to ../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt
+[1.973s] writing entry points to ../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt
+[1.973s] writing requirements to ../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt
+[1.973s] writing top-level names to ../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt
+[2.006s] reading manifest file '../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[2.007s] writing manifest file '../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[2.007s] running build
+[2.007s] running build_py
+[2.007s] creating /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco
+[2.007s] copying ros2_aruco/__init__.py -> /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco
+[2.008s] copying ros2_aruco/aruco_generate_marker.py -> /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco
+[2.008s] copying ros2_aruco/aruco_node_tf.py -> /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco
+[2.008s] copying ros2_aruco/aruco_node.py -> /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco
+[2.008s] copying ros2_aruco/transformations.py -> /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco
+[2.009s] running install
+[2.013s] running install_lib
+[2.030s] creating /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[2.030s] copying /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco/__init__.py -> /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[2.030s] copying /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco/aruco_generate_marker.py -> /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[2.030s] copying /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco/aruco_node_tf.py -> /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[2.031s] copying /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco/aruco_node.py -> /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[2.031s] copying /home/hamilton/souzou/build/ros2_aruco/build/lib/ros2_aruco/transformations.py -> /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[2.031s] byte-compiling /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/__init__.py to __init__.cpython-310.pyc
+[2.032s] byte-compiling /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/aruco_generate_marker.py to aruco_generate_marker.cpython-310.pyc
+[2.032s] byte-compiling /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/aruco_node_tf.py to aruco_node_tf.cpython-310.pyc
+[2.033s] byte-compiling /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/aruco_node.py to aruco_node.cpython-310.pyc
+[2.034s] byte-compiling /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/transformations.py to transformations.cpython-310.pyc
+[2.040s] running install_data
+[2.040s] copying resource/ros2_aruco -> /home/hamilton/souzou/install/ros2_aruco/share/ament_index/resource_index/packages
+[2.042s] copying package.xml -> /home/hamilton/souzou/install/ros2_aruco/share/ros2_aruco
+[2.043s] copying launch/aruco_recognition.launch.py -> /home/hamilton/souzou/install/ros2_aruco/share/ros2_aruco/launch
+[2.044s] copying config/aruco_parameters.yaml -> /home/hamilton/souzou/install/ros2_aruco/share/ros2_aruco/config
+[2.045s] running install_egg_info
+[2.061s] Copying ../../build/ros2_aruco/ros2_aruco.egg-info to /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info
+[2.062s] running install_scripts
+[2.183s] Installing aruco_generate_marker script to /home/hamilton/souzou/install/ros2_aruco/lib/ros2_aruco
+[2.184s] Installing aruco_node script to /home/hamilton/souzou/install/ros2_aruco/lib/ros2_aruco
+[2.184s] Installing aruco_node_tf script to /home/hamilton/souzou/install/ros2_aruco/lib/ros2_aruco
+[2.185s] writing list of installed files to '/home/hamilton/souzou/build/ros2_aruco/install.log'
+[2.205s] Invoked command in '/home/hamilton/souzou/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/home/hamilton/souzou/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_aruco build --build-base /home/hamilton/souzou/build/ros2_aruco/build install --record /home/hamilton/souzou/build/ros2_aruco/install.log --single-version-externally-managed install_data --force

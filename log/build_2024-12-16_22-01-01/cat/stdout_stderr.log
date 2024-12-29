@@ -1,0 +1,24 @@
+running develop
+running egg_info
+writing cat.egg-info/PKG-INFO
+writing dependency_links to cat.egg-info/dependency_links.txt
+writing entry points to cat.egg-info/entry_points.txt
+writing requirements to cat.egg-info/requires.txt
+writing top-level names to cat.egg-info/top_level.txt
+reading manifest file 'cat.egg-info/SOURCES.txt'
+writing manifest file 'cat.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/hamilton/souzou/install/cat/lib/python3.10/site-packages/cat.egg-link (link to .)
+Installing aruco_node_tf script to /home/hamilton/souzou/install/cat/lib/cat
+Installing odom_test_node script to /home/hamilton/souzou/install/cat/lib/cat
+Installing pc_controller script to /home/hamilton/souzou/install/cat/lib/cat
+Installing ps4_controller_node script to /home/hamilton/souzou/install/cat/lib/cat
+Installing ps4_joy_node script to /home/hamilton/souzou/install/cat/lib/cat
+Installing state_machine script to /home/hamilton/souzou/install/cat/lib/cat
+Installing tcp_receive_node script to /home/hamilton/souzou/install/cat/lib/cat
+Installing tcp_send_node script to /home/hamilton/souzou/install/cat/lib/cat
+Installing udp_receive_node script to /home/hamilton/souzou/install/cat/lib/cat
+Installing udp_send_node script to /home/hamilton/souzou/install/cat/lib/cat
+
+Installed /home/hamilton/souzou/build/cat
+running symlink_data

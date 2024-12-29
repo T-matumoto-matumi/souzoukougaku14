@@ -1,0 +1,190 @@
+[0.179s] Invoking command in '/home/hamilton/souzou/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hamilton/souzou/install/ros2_aruco:/home/hamilton/souzou/install/cat:/opt/ros/humble /usr/local/bin/cmake /home/hamilton/souzou/ros2_aruco/ros2_aruco_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hamilton/souzou/install/ros2_aruco_interfaces
+[0.181s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.181s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.181s]   CMake.
+[0.181s] 
+[0.181s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.181s]   to tell CMake that the project requires at least <min> but has been updated
+[0.181s]   to work with policies introduced by <max> or earlier.
+[0.181s] 
+[0.181s] [0m
+[0.189s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.339s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.345s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.365s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.367s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.372s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.381s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.391s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.425s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.801s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.595s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.995s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.997s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[1.997s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.997s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.997s]   the cmake_policy command to set the policy and suppress this warning.
+[1.997s] 
+[1.997s] Call Stack (most recent call first):
+[1.997s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.997s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.997s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[1.997s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.997s] [0m
+[2.015s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.015s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[2.015s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.015s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.015s]   the cmake_policy command to set the policy and suppress this warning.
+[2.015s] 
+[2.016s] Call Stack (most recent call first):
+[2.016s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.016s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.016s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.016s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[2.016s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.016s] [0m
+[2.035s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[2.036s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.036s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.036s]   the cmake_policy command to set the policy and suppress this warning.
+[2.036s] 
+[2.036s] Call Stack (most recent call first):
+[2.036s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.036s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.036s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.036s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[2.036s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.036s] [0m
+[2.037s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.037s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.037s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.075s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.084s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.085s] -- Added test 'lint_cmake' to check CMake code style
+[2.086s] -- Added test 'xmllint' to check XML markup files
+[2.088s] -- Configuring done (1.9s)
+[2.123s] -- Generating done (0.0s)
+[2.133s] -- Build files have been written to: /home/hamilton/souzou/build/ros2_aruco_interfaces
+[2.228s] Invoked command in '/home/hamilton/souzou/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hamilton/souzou/install/ros2_aruco:/home/hamilton/souzou/install/cat:/opt/ros/humble /usr/local/bin/cmake /home/hamilton/souzou/ros2_aruco/ros2_aruco_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hamilton/souzou/install/ros2_aruco_interfaces
+[2.230s] Invoking command in '/home/hamilton/souzou/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hamilton/souzou/install/ros2_aruco:/home/hamilton/souzou/install/cat:/opt/ros/humble /usr/local/bin/cmake --build /home/hamilton/souzou/build/ros2_aruco_interfaces -- -j8 -l8
+[2.258s] [  3%] Built target ros2_aruco_interfaces__cpp
+[2.259s] [ 12%] Built target ros2_aruco_interfaces__rosidl_generator_c
+[2.263s] [ 12%] Built target ament_cmake_python_symlink_ros2_aruco_interfaces
+[2.282s] [ 22%] Built target ros2_aruco_interfaces__rosidl_typesupport_cpp
+[2.283s] [ 32%] Built target ros2_aruco_interfaces__rosidl_typesupport_c
+[2.283s] [ 41%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c
+[2.283s] [ 51%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c
+[2.290s] [ 61%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp
+[2.290s] [ 70%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.302s] [ 70%] Built target ros2_aruco_interfaces
+[2.314s] [ 74%] Built target ros2_aruco_interfaces__py
+[2.328s] [ 80%] Built target ros2_aruco_interfaces__rosidl_generator_py
+[2.345s] [ 87%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.346s] [ 93%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.348s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_c__pyext
+[2.589s] running egg_info
+[2.618s] writing ros2_aruco_interfaces.egg-info/PKG-INFO
+[2.619s] writing dependency_links to ros2_aruco_interfaces.egg-info/dependency_links.txt
+[2.619s] writing top-level names to ros2_aruco_interfaces.egg-info/top_level.txt
+[2.706s] reading manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'
+[2.709s] writing manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'
+[2.735s] [100%] Built target ament_cmake_python_build_ros2_aruco_interfaces_egg
+[2.740s] Invoked command in '/home/hamilton/souzou/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hamilton/souzou/install/ros2_aruco:/home/hamilton/souzou/install/cat:/opt/ros/humble /usr/local/bin/cmake --build /home/hamilton/souzou/build/ros2_aruco_interfaces -- -j8 -l8
+[2.741s] Invoking command in '/home/hamilton/souzou/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hamilton/souzou/install/ros2_aruco:/home/hamilton/souzou/install/cat:/opt/ros/humble /usr/local/bin/cmake --install /home/hamilton/souzou/build/ros2_aruco_interfaces
+[2.745s] -- Install configuration: ""
+[2.745s] -- Execute custom install script
+[2.746s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros2_aruco_interfaces
+[2.746s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.h
+[2.746s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.h
+[2.746s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.h
+[2.746s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.h
+[2.746s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.747s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.sh
+[2.747s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.dsv
+[2.747s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_c.h
+[2.747s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.747s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.hpp
+[2.748s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__builder.hpp
+[2.748s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.hpp
+[2.748s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__traits.hpp
+[2.748s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.hpp
+[2.748s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.748s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_cpp.hpp
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_c.h
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_cpp.hpp
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.sh
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.dsv
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/PKG-INFO
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/SOURCES.txt
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/dependency_links.txt
+[2.751s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/top_level.txt
+[2.752s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/__init__.py
+[2.752s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_c.c
+[2.752s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.752s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.752s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/libros2_aruco_interfaces__rosidl_generator_py.so
+[2.752s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/__init__.py
+[2.752s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers.py
+[2.752s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers_s.c
+[2.752s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.753s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.753s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.753s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.753s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.idl
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.msg
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ament_index/resource_index/package_run_dependencies/ros2_aruco_interfaces
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ament_index/resource_index/parent_prefix_path/ros2_aruco_interfaces
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.sh
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.dsv
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.sh
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.dsv
+[2.754s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.bash
+[2.755s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.sh
+[2.755s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.zsh
+[2.755s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.dsv
+[2.755s] -- Symlinking: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv
+[2.760s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ament_index/resource_index/packages/ros2_aruco_interfaces
+[2.760s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.760s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.761s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.761s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.761s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.761s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.761s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.761s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig.cmake
+[2.762s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig-version.cmake
+[2.762s] -- Up-to-date symlink: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.xml
+[2.762s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so
+[2.762s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.762s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.762s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so
+[2.763s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so
+[2.763s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.763s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so
+[2.810s] Listing '/home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces'...
+[2.810s] Compiling '/home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/__init__.py'...
+[2.810s] Listing '/home/hamilton/souzou/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg'...
+[2.810s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_py.so
+[2.810s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport.cmake
+[2.810s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.811s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.811s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.811s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cppExport.cmake
+[2.811s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.811s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.812s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.812s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.812s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport.cmake
+[2.812s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.812s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.812s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.813s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport.cmake
+[2.813s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.813s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport.cmake
+[2.814s] -- Up-to-date: /home/hamilton/souzou/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.817s] Invoked command in '/home/hamilton/souzou/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hamilton/souzou/install/ros2_aruco:/home/hamilton/souzou/install/cat:/opt/ros/humble /usr/local/bin/cmake --install /home/hamilton/souzou/build/ros2_aruco_interfaces

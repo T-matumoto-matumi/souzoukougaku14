@@ -1,0 +1,25 @@
+[0.621s] Invoking command in '/home/hamilton/souzou/build/ros2_aruco': PYTHONPATH=/home/hamilton/souzou/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hamilton/souzou/build/ros2_aruco/build --no-deps symlink_data --force
+[0.753s] /home/hamilton/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.754s]   warnings.warn(msg)
+[0.931s] running develop
+[1.168s] running egg_info
+[1.187s] writing ros2_aruco.egg-info/PKG-INFO
+[1.187s] writing dependency_links to ros2_aruco.egg-info/dependency_links.txt
+[1.188s] writing entry points to ros2_aruco.egg-info/entry_points.txt
+[1.188s] writing requirements to ros2_aruco.egg-info/requires.txt
+[1.188s] writing top-level names to ros2_aruco.egg-info/top_level.txt
+[1.233s] reading manifest file 'ros2_aruco.egg-info/SOURCES.txt'
+[1.234s] writing manifest file 'ros2_aruco.egg-info/SOURCES.txt'
+[1.261s] running build_ext
+[1.261s] Creating /home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages/ros2-aruco.egg-link (link to .)
+[1.261s] Installing aruco_generate_marker script to /home/hamilton/souzou/install/ros2_aruco/lib/ros2_aruco
+[1.261s] Installing aruco_node script to /home/hamilton/souzou/install/ros2_aruco/lib/ros2_aruco
+[1.261s] Installing aruco_node_tf script to /home/hamilton/souzou/install/ros2_aruco/lib/ros2_aruco
+[1.262s] 
+[1.262s] Installed /home/hamilton/souzou/build/ros2_aruco
+[1.262s] running symlink_data
+[1.262s] symbolically linking /home/hamilton/souzou/build/ros2_aruco/resource/ros2_aruco -> /home/hamilton/souzou/install/ros2_aruco/share/ament_index/resource_index/packages
+[1.262s] symbolically linking /home/hamilton/souzou/build/ros2_aruco/package.xml -> /home/hamilton/souzou/install/ros2_aruco/share/ros2_aruco
+[1.262s] symbolically linking /home/hamilton/souzou/build/ros2_aruco/launch/aruco_recognition.launch.py -> /home/hamilton/souzou/install/ros2_aruco/share/ros2_aruco/launch
+[1.262s] symbolically linking /home/hamilton/souzou/build/ros2_aruco/config/aruco_parameters.yaml -> /home/hamilton/souzou/install/ros2_aruco/share/ros2_aruco/config
+[1.297s] Invoked command in '/home/hamilton/souzou/build/ros2_aruco' returned '0': PYTHONPATH=/home/hamilton/souzou/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hamilton/souzou/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hamilton/souzou/build/ros2_aruco/build --no-deps symlink_data --force

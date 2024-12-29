@@ -1,5 +1,0 @@
-float64 vel_x
-float64 vel_y
-float64 vel_yaw
-float64 vel_wheel_right
-float64 vel_wheel_left

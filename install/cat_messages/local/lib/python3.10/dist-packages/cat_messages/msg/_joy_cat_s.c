@@ -1,0 +1,1 @@
+/home/hamilton/souzou/build/cat_messages/rosidl_generator_py/cat_messages/msg/_joy_cat_s.c
