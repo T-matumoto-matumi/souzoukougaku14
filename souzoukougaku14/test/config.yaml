@@ -1,0 +1,4 @@
+bring_in_two_cups:
+  straight : 1000.0
+  straight : 100.0
+  curve : 90

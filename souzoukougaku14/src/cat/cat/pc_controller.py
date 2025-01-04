@@ -1,6 +1,12 @@
 import rclpy
 from rclpy.node import Node
 from cat_messages.msg import JoyCat
+import sys
+import threading
+import termios
+import tty
+
+
 
 class PcController(Node):
     def __init__(self):

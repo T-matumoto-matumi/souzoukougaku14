@@ -2,10 +2,7 @@
 #include "math.h"
 #include "CBTimer.h"
 #include "Servo.h"
-// 前回のタイマー処理実行時刻を記録
-// unsigned long previousMillis = 0;
-// const unsigned long interval = 10; // 1ms の間隔
-// // float timer_period =0.0;
+
 WiFiUDP udp;
 // 送信するfloat型配列
 //l,
@@ -72,7 +69,7 @@ class MOTOR {
 };
 
 MOTOR motor_right(7,8,9);
-MOTOR motor_left(4,5,6);
+MOTOR motor_left(12,13,11);
 Servo upper;
 Servo grab;
 
@@ -84,16 +81,16 @@ void callback(void){
 
 
 void setup(){
-  Serial.begin(115200);
+  Serial.begin(9600);
   wifi_setup();
   pinMode(0,INPUT_PULLUP);
   pinMode(1,INPUT_PULLUP);
   pinMode(2,INPUT_PULLUP);
   pinMode(3,INPUT_PULLUP);
   //servo_setup//
-  upper.attach(10);
+  upper.attach(6);
   upper.write(0);
-  grab.attach(11);
+  grab.attach(10);
   grab.write(0);
   attachInterrupt(digitalPinToInterrupt(PHASE_A_right),A_CHANGE_RIGHT,CHANGE);
   attachInterrupt(digitalPinToInterrupt(PHASE_B_right),B_CHANGE_RIGHT,CHANGE);
@@ -119,10 +116,13 @@ void loop(){
   send();
   motor_right.setpower( receive_array[0]);
   motor_left.setpower( receive_array[1]);
+
   // motor_right.setpower(100);
-  // motor_left.setpower( 100);
+  // motor_left.setpower(100);
+
   upper_state = bool(receive_array[3]);
   grab_state = bool(receive_array[4]);
+
   if (upper_state == 0){
     upper.write(180);
   }else{
@@ -133,16 +133,7 @@ void loop(){
   }else{
     grab.write(0);
   }
-
-  Serial.println(upper_state);
-  //unsigned long currentMillis = millis();
-  // 一定時間が経過した場合に step を実行
-  // if (currentMillis - previousMillis >= interval) {
-  //   timer_period = float(currentMillis - previousMillis);
-  //   previousMillis = currentMillis; // 実行時刻を更新
-  //   step(timer_period); // タイマーの処理
-
-  // }
+  l+=0.1;
 }
 
 void wifi_setup(){
@@ -206,6 +197,7 @@ void step(){
   count_before[0] = count_after[0];
   count_before[1] = count_after[1];
   vel_before_l = vel_l;
+
 
   
 }

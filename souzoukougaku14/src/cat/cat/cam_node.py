@@ -65,7 +65,7 @@ class CamNode(Node):
                     
 def main(args=None):
     rclpy.init(args=args)
-    yaml_file = '/home/hamilton/souzou/souzoukougaku14/src/cat/config/ost.yaml'  
+    yaml_file = '/home/hamilton/souzoukougaku14/souzoukougaku14/src/cat/config/ost.yaml'  
     node = CamNode(yaml_file)
     rclpy.spin(node)
     node.cap.release()

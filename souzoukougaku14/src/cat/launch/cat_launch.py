@@ -28,13 +28,6 @@ def generate_launch_description():
         Node(
             package='cat',
             namespace='cat',
-            executable='pc_controller',
-            name='pc_controller',
-            output="screen"
-        ),
-        Node(
-            package='cat',
-            namespace='cat',
             executable='udp_send_node',
             name='udp_send_node',
         ),
@@ -42,8 +35,16 @@ def generate_launch_description():
             package='cat',
             namespace='cat',
             executable='udp_receive_node',
-            name='udp_send_node',
+            name='udp_receive_node',
+        ),
+        Node(
+            package='cat',
+            namespace='cat',
+            executable='pc_controller',
+            name='pc_controller',
+            output="screen",
+            emulate_tty=True,  # キーボード入力を有効化
         ),
         
-        
+
     ])

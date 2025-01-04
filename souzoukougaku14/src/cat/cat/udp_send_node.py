@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-from cat_messages.msg import JoyCat
+from cat_messages.msg import Button
 import socket
 import struct
 import math
@@ -24,7 +24,7 @@ class UdpSendNode(Node):
             Twist,"cmd_vel",self.vel_callback,10
         )
         self.sub_button = self.create_subscription(
-            JoyCat,"joy_cat",self.button_cb,10
+            Button,"button",self.button_cb,10
         )
         self.vel_x =0.0
         self.vel_w =0.0
